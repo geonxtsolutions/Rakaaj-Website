@@ -1,88 +1,120 @@
-<footer class="bg-brand-dark pt-20 pb-8 px-6 md:px-12 lg:px-24 border-t border-gray-800 text-sm">
-     <footer class="bg-brand-dark pt-20 pb-8 px-6 md:px-12 lg:px-24 border-t border-gray-800 text-sm">
-        <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
-            <!-- Brand -->
-            <div>
-                <div class="flex items-center gap-3 mb-6">
-                    <div class="w-8 h-8 border border-brand-gold flex items-center justify-center rounded">
-                        <span class="text-brand-gold font-bold text-xs">R</span>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-[#080d1a] font-sans antialiased text-slate-300">
+
+    <!-- ========================================== -->
+    <!-- FOOTER COMPONENT START                     -->
+    <!-- ========================================== -->
+    
+    <footer class="bg-[#080d1a] text-slate-300 pt-16 pb-12 w-full">
+        <div class="max-w-7xl mx-auto px-6 md:px-12 lg:px-16">
+            
+            <!-- Main Footer Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-10 lg:gap-12 mb-16">
+                
+                <!-- Brand & Description Column -->
+                <div class="lg:col-span-4 space-y-6">
+                    <div class="flex items-center gap-3">
+                        <div class="w-10 h-10 border border-[#c5a059] flex items-center justify-center rounded-sm">
+                            <span class="text-[#c5a059] font-bold text-lg font-serif">R</span>
+                        </div>
+                        <div>
+                            <h2 class="text-white font-serif font-bold tracking-wider text-lg leading-none m-0">RAKAJ</h2>
+                            <p class="text-[10px] text-[#c5a059] tracking-widest font-semibold uppercase m-0 mt-1">DESIGNERS & BUILDERS LTD</p>
+                        </div>
                     </div>
-                    <div>
-                        <h4 class="text-white font-serif font-bold tracking-wider m-0">RAKAJ</h4>
-                        <p class="text-[8px] text-brand-gold tracking-widest uppercase m-0">Designers & Builders Ltd</p>
+                    
+                    <p class="text-slate-400 text-sm font-light leading-relaxed pr-4">
+                        Rakaaj Designers & Builders brings together thoughtful design and quality construction to create spaces that are functional, distinctive and built to last. Operating across Nairobi, Nakuru, Kiambu, and all regions of Kenya.
+                    </p>
+                    
+                    <!-- Social Links Outlined Buttons -->
+                    <div class="space-y-3 pt-2">
+                        <a href="#" class="block w-full border border-slate-800 hover:border-slate-600 bg-slate-900/10 px-4 py-3 text-[11px] tracking-wider text-slate-300 transition-colors uppercase">
+                            INSTAGRAM: @RAKAJ DESIGNERS & BUILDERS
+                        </a>
+                        <a href="#" class="block w-full border border-slate-800 hover:border-slate-600 bg-slate-900/10 px-4 py-3 text-[11px] tracking-wider text-slate-300 transition-colors uppercase">
+                            TIKTOK / X: @RAKAJ DESIGNERS & BUILDERS
+                        </a>
                     </div>
                 </div>
-                <p class="text-gray-400 font-light text-xs leading-relaxed mb-6">
-                    Rakaaj Designers & Builders brings together thoughtful design and quality construction to create spaces that are functional, distinctive and built to last. Operating across Nairobi, Nakuru, Kiambu, and all regions of Kenya.
-                </p>
-                <div class="space-y-2">
-                    <a href="#" class="block border border-gray-700 text-gray-400 text-[10px] uppercase tracking-widest py-2 px-4 hover:border-brand-gold hover:text-brand-gold transition-colors inline-block w-max">Instagram: @rakaj designers & builders</a>
-                    <a href="#" class="block border border-gray-700 text-gray-400 text-[10px] uppercase tracking-widest py-2 px-4 hover:border-brand-gold hover:text-brand-gold transition-colors inline-block w-max">TikTok / X: @rakaj designers & builders</a>
+
+                <!-- Explore Column -->
+                <div class="lg:col-span-2">
+                    <h3 class="text-white text-sm font-bold tracking-wider uppercase mb-6">EXPLORE</h3>
+                    <ul class="space-y-3 text-sm text-slate-400 font-light">
+                        <li><a href="index.html" class="hover:text-white transition-colors">Home</a></li>
+                        <li><a href="about.html" class="hover:text-white transition-colors">About Us</a></li>
+                        <li><a href="services.html" class="hover:text-white transition-colors">Services</a></li>
+                        <li><a href="projects.html" class="hover:text-white transition-colors">Projects</a></li>
+                        <li><a href="approach.html" class="hover:text-white transition-colors">Our Approach</a></li>
+                        <li><a href="leadership.html" class="hover:text-white transition-colors">Leadership</a></li>
+                        <li><a href="contact.html" class="hover:text-white transition-colors">Contact</a></li>
+                    </ul>
+                </div>
+
+                <!-- Practice Areas Column -->
+                <div class="lg:col-span-3">
+                    <h3 class="text-white text-sm font-bold tracking-wider uppercase mb-6">PRACTICE AREAS</h3>
+                    <ul class="space-y-3 text-sm text-slate-400 font-light">
+                        <li><a href="#" class="hover:text-white transition-colors">Architectural Planning & Design</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">Structural Building Design</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">Turnkey Civil Construction</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">Interior Design & Cabinetry</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">Bills of Quantities & Cost Control</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">Residential Modernization</a></li>
+                    </ul>
+                </div>
+
+                <!-- Office & Inquiries Column -->
+                <div class="lg:col-span-3">
+                    <h3 class="text-white text-sm font-bold tracking-wider uppercase mb-6">OFFICE & INQUIRIES</h3>
+                    <div class="space-y-4 text-sm font-light">
+                        <div>
+                            <p class="text-white font-normal m-0">Head Office:</p>
+                            <p class="text-slate-400 m-0">Nairobi, Kenya</p>
+                        </div>
+                        <div>
+                            <p class="text-white font-normal m-0">Direct Telephone:</p>
+                            <a href="tel:+254718178773" class="text-slate-400 hover:text-white transition-colors block">+254 718 178773</a>
+                        </div>
+                        <div>
+                            <p class="text-white font-normal m-0">Direct Email:</p>
+                            <a href="mailto:raphamasila@gmail.com" class="text-slate-400 hover:text-white transition-colors block break-all">raphamasila@gmail.com</a>
+                        </div>
+                        <div>
+                            <p class="text-white font-normal m-0">Practice Director:</p>
+                            <p class="text-slate-400 m-0">Raphael Masila</p>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+
+            <!-- Bottom Divider & Copyright -->
+            <div class="border-t border-slate-800/80 pt-8 flex flex-col md:flex-row justify-between items-center text-xs text-slate-500 font-light gap-4">
+                <p>&copy; Rakaaj Designers & Builders Ltd. All rights reserved. Nairobi, Kenya.</p>
+                <div class="flex items-center space-x-3 text-slate-400">
+                    <a href="#" class="hover:text-white transition-colors">Statutory Compliance</a>
+                    <span>·</span>
+                    <a href="#" class="hover:text-white transition-colors">Architectural Integrity</a>
+                    <span>·</span>
+                    <a href="#" class="hover:text-white transition-colors">Terms of Engagement</a>
                 </div>
             </div>
-
-            <!-- Explore Links -->
-            <div>
-                <h4 class="text-white font-bold uppercase tracking-widest text-xs mb-6">Explore</h4>
-                <ul class="space-y-3 text-gray-400 font-light text-xs">
-                    <li><a href="#" class="hover:text-brand-gold transition-colors">Home</a></li>
-                    <li><a href="#" class="hover:text-brand-gold transition-colors">About Us</a></li>
-                    <li><a href="#" class="hover:text-brand-gold transition-colors">Services</a></li>
-                    <li><a href="#" class="hover:text-brand-gold transition-colors">Projects</a></li>
-                    <li><a href="#" class="hover:text-brand-gold transition-colors">Our Approach</a></li>
-                    <li><a href="#" class="hover:text-brand-gold transition-colors">Leadership</a></li>
-                    <li><a href="#" class="hover:text-brand-gold transition-colors">Contact</a></li>
-                </ul>
-            </div>
-
-            <!-- Practice Areas -->
-            <div>
-                <h4 class="text-white font-bold uppercase tracking-widest text-xs mb-6">Practice Areas</h4>
-                <ul class="space-y-3 text-gray-400 font-light text-xs">
-                    <li>Architectural Planning & Design</li>
-                    <li>Structural Building Design</li>
-                    <li>Turnkey Civil Construction</li>
-                    <li>Interior Design & Cabinetry</li>
-                    <li>Bills of Quantities & Cost Control</li>
-                    <li>Residential Modernization</li>
-                </ul>
-            </div>
-
-            <!-- Office & Inquiries -->
-            <div>
-                <h4 class="text-white font-bold uppercase tracking-widest text-xs mb-6">Office & Inquiries</h4>
-                <ul class="space-y-4 text-gray-400 font-light text-xs">
-                    <li>
-                        <strong class="block text-white mb-1 font-normal">Head Office:</strong>
-                        Nairobi, Kenya
-                    </li>
-                    <li>
-                        <strong class="block text-white mb-1 font-normal">Direct Telephone:</strong>
-                        +254 718 178773
-                    </li>
-                    <li>
-                        <strong class="block text-white mb-1 font-normal">Direct Email:</strong>
-                        raphamasila@gmail.com
-                    </li>
-                    <li>
-                        <strong class="block text-white mb-1 font-normal">Practice Director:</strong>
-                        Raphael Masila
-                    </li>
-                </ul>
-            </div>
-        </div>
-
-        <div class="max-w-7xl mx-auto pt-8 border-t border-gray-800 flex flex-col md:flex-row justify-between items-center gap-4">
-            <p class="text-gray-500 text-[10px]">&copy; Rakaaj Designers & Builders Ltd. All rights reserved. Nairobi, Kenya.</p>
-            <div class="flex gap-4 text-[10px] text-gray-500">
-                <span>Statutory Compliance</span> • <span>Architectural Integrity</span> • <span>Terms of Engagement</span>
-            </div>
+            
         </div>
     </footer>
-    <div class="max-w-7xl mx-auto pt-8 border-t border-gray-800 flex flex-col md:flex-row justify-between items-center gap-4">
-        <p class="text-gray-500 text-[10px]">&copy; RAKAJ Designers & Builders Ltd. All rights reserved. Nairobi, Kenya.</p>
-        <div class="flex gap-4 text-[10px] text-gray-500">
-            <span>Statutory Compliance</span> • <span>Architectural Integrity</span> • <span>Terms of Engagement</span>
-        </div>
-    </div>
-</footer>
+
+    <!-- ========================================== -->
+    <!-- FOOTER COMPONENT END                       -->
+    <!-- ========================================== -->
+
+</body>
+</html>
