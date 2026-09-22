@@ -3,352 +3,335 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Us | Rakaaj Designers & Builders</title>
+    <title>About Us | Rakaaj Designers & Builders Ltd</title>
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&display=swap" rel="stylesheet">
+    
+    <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
         tailwind.config = {
             theme: {
                 extend: {
                     colors: {
-                        'brand-navy': '#06101e',
-                        'brand-dark': '#0a1526',
-                        'brand-gold': '#c5a059',
-                        'brand-light': '#f8f9fa'
+                        brand: {
+                            navy: '#0a1122', /* Dark Navy Background */
+                            card: '#111b33', /* Slightly lighter navy for cards */
+                            gold: '#d4af37', /* Gold/Mustard accent */
+                            light: '#f8fafc'
+                        }
                     },
                     fontFamily: {
-                        'serif': ['"Playfair Display"', 'serif'],
-                        'sans': ['"Inter"', 'sans-serif'],
+                        sans: ['Montserrat', 'sans-serif'],
+                        serif: ['Playfair Display', 'serif'],
                     }
                 }
             }
         }
-    </head>
-<body class="font-sans antialiased text-gray-800 bg-brand-light">
+    </script>
+</head>
+<body class="font-sans text-gray-800 antialiased overflow-x-hidden bg-white">
 
-    <!-- TOP BAR -->
-    <div class="bg-brand-navy border-b border-gray-800 text-gray-400 text-[10px] font-bold tracking-widest uppercase py-2 px-6 md:px-12 lg:px-24 flex flex-col md:flex-row justify-between items-center gap-2">
-        <div class="flex items-center gap-2">
-            <span class="text-brand-gold mr-1">●</span>
-            Kenya Registered Practice • Architecture • Engineering • Turnkey Construction
-        </div>
-        <div class="flex items-center gap-4">
-            <a href="#" class="flex items-center gap-2 hover:text-brand-gold transition-colors">
-                <span class="text-brand-gold">📞</span> +254 718 178773
-            </a>
-            <span class="text-gray-700">|</span>
-            <a href="#" class="flex items-center gap-2 hover:text-brand-gold transition-colors">
-                <span class="text-brand-gold">✉</span> raphamasila@gmail.com
-            </a>
-            <span class="text-gray-700">|</span>
-            <span class="flex items-center gap-2">
-                <span class="text-brand-gold">📍</span> Nairobi, Kenya
-            </span>
-        </div>
-    </div>
+    <!-- INJECTED NAVBAR -->
+    <div id="navbar-placeholder"></div>
 
-    <!-- MAIN NAVIGATION -->
-    <header class="bg-brand-navy text-white px-6 md:px-12 lg:px-24 py-6 sticky top-0 z-50 shadow-sm border-b border-gray-800">
-        <div class="max-w-7xl mx-auto flex justify-between items-center">
-            <!-- Logo -->
-            <a href="index.html" class="flex items-center gap-3">
-                <div class="w-10 h-10 border border-brand-gold flex items-center justify-center rounded-sm bg-white/5">
-                    <span class="text-brand-gold font-bold text-lg">R</span>
-                </div>
-                <div>
-                    <h1 class="font-serif font-bold tracking-wider text-xl leading-none">RAKAAJ</h1>
-                    <p class="text-[8px] text-brand-gold tracking-widest uppercase mt-1">Designers & Builders Ltd</p>
-                </div>
-            </a>
-
-            <!-- Desktop Nav -->
-            <nav class="hidden lg:flex items-center gap-8 text-[11px] font-bold tracking-widest uppercase">
-                <a href="index.html" class="text-gray-300 hover:text-brand-gold transition-colors">Home</a>
-                <a href="about.html" class="text-brand-gold border-b-2 border-brand-gold pb-1">About Us</a>
-                <a href="#" class="text-gray-300 hover:text-brand-gold transition-colors">Services</a>
-                <a href="#" class="text-gray-300 hover:text-brand-gold transition-colors">Projects</a>
-                <a href="#" class="text-gray-300 hover:text-brand-gold transition-colors">Our Approach</a>
-                <a href="#" class="text-gray-300 hover:text-brand-gold transition-colors">Leadership</a>
-                <a href="#" class="text-gray-300 hover:text-brand-gold transition-colors">Contact</a>
-            </nav>
-
-            <a href="#" class="hidden md:inline-block bg-brand-gold text-brand-navy px-6 py-3 text-[10px] font-bold uppercase tracking-widest hover:bg-yellow-500 transition-colors">
-                Start a Project &rarr;
-            </a>
-        </div>
-    </header>
-
-    <!-- HERO SECTION -->
-    <section class="relative bg-brand-navy pt-24 pb-32 px-6 md:px-12 lg:px-24">
+    <!-- 1. HERO SECTION -->
+    <section class="relative bg-brand-navy pt-32 pb-24 px-6 md:px-12 lg:px-24 flex items-center min-h-[60vh]">
+        <!-- Background Overlay (Simulating the dark architectural background) -->
         <div class="absolute inset-0 z-0">
-            <!-- Background Image Reference -->
-            <img src="image_03ea5f.png" alt="Background" class="w-full h-full object-cover opacity-20">
+            <img src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=2000&q=80" alt="Architecture Background" class="w-full h-full object-cover opacity-10 filter grayscale">
             <div class="absolute inset-0 bg-gradient-to-r from-brand-navy via-brand-navy/90 to-transparent"></div>
         </div>
         
-        <div class="max-w-7xl mx-auto relative z-10">
-            <div class="flex items-center gap-2 text-brand-gold text-[10px] uppercase tracking-widest font-bold mb-12">
-                <a href="index.html" class="hover:text-white transition-colors">Home</a>
+        <div class="max-w-7xl mx-auto w-full relative z-10">
+            <div class="flex items-center gap-2 text-[10px] uppercase tracking-widest font-bold mb-10">
+                <a href="index.html" class="text-brand-gold hover:text-white transition-colors">HOME</a>
                 <span class="text-gray-500">/</span>
-                <span class="text-white">About Us</span>
+                <span class="text-brand-gold">ABOUT US</span>
             </div>
             
-            <span class="text-brand-gold font-bold tracking-widest uppercase text-[10px] block mb-4">Design & Build Heritage • East Africa</span>
-            <h1 class="text-5xl md:text-7xl font-serif font-bold text-white mb-6">About Rakaaj</h1>
-            <p class="text-lg text-gray-300 font-light max-w-2xl leading-relaxed">
-                Designing with purpose. Building with precision. Unifying architectural imagination and rigorous turnkey construction.
-            </p>
+            <span class="text-brand-gold font-bold tracking-widest uppercase text-xs block mb-4">DESIGN & BUILD HERITAGE • EAST AFRICA</span>
+            <h1 class="text-6xl md:text-8xl font-serif text-white mb-8 tracking-wide">
+                About <span class="italic">Rakaaj</span>
+            </h1>
+            
+            <div class="border-l-2 border-brand-gold pl-5 max-w-2xl">
+                <p class="text-lg md:text-xl text-gray-300 font-light leading-relaxed">
+                    Designing with purpose. Building with precision. Unifying architectural imagination and rigorous turnkey construction.
+                </p>
+            </div>
         </div>
     </section>
 
-    <!-- PRACTICE OVERVIEW -->
-    <section class="py-24 bg-white px-6 md:px-12 lg:px-24">
-        <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
-            <div>
-                <span class="text-brand-gold font-bold tracking-widest uppercase text-[10px] block mb-4">Practice Overview</span>
-                <h2 class="text-4xl md:text-5xl font-serif font-bold text-brand-navy leading-tight">
-                    We believe good spaces begin with <span class="italic font-light">good thinking.</span>
+    <!-- 2. PRACTICE OVERVIEW SECTION -->
+    <section class="py-24 px-6 md:px-12 lg:px-24 bg-white">
+        <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-16 items-start">
+            <div class="lg:col-span-5">
+                <span class="text-brand-gold font-bold tracking-widest uppercase text-[10px] block mb-4">PRACTICE OVERVIEW</span>
+                <h2 class="text-4xl md:text-5xl font-serif text-brand-navy leading-tight">
+                    We believe good spaces begin with good thinking.
                 </h2>
-                <div class="w-16 h-1 bg-brand-gold mt-8"></div>
+                <div class="w-12 h-[2px] bg-brand-gold mt-6"></div>
             </div>
-            <div class="text-gray-500 font-light leading-relaxed space-y-6">
-                <p>
-                    <strong class="font-semibold text-brand-navy">Rakaaj Designers & Builders Ltd</strong> is an integrated Kenyan architectural design and general building contractor. We combine visionary spatial drafting, meticulous structural calculations, and turnkey construction management under one accountable roof.
-                </p>
-                <p>
-                    By guiding every commission from raw schematic sketches, 3D photorealistic renderings, and statutory county approvals down to the final joinery fittings and structural key handover, we liberate property owners from the costly delays and finger-pointing common with fragmented subcontracting.
-                </p>
-                <div class="pt-6 flex flex-col sm:flex-row sm:items-center justify-between gap-4 border-t border-gray-100">
-                    <a href="#" class="text-brand-navy font-bold uppercase tracking-widest text-[10px] flex items-center gap-2 hover:text-brand-gold transition-colors">
-                        OUR STORY & LEADERSHIP &rarr;
-                    </a>
-                    <span class="text-[10px] font-bold text-gray-400 tracking-widest uppercase">
-                        Nairobi • Machakos • Nakuru
-                    </span>
+            
+            <div class="lg:col-span-7">
+                <div class="text-gray-600 font-light leading-relaxed space-y-6 text-sm md:text-base">
+                    <p>
+                        <strong class="font-semibold text-brand-navy">Rakaaj Designers & Builders Ltd</strong> is an integrated Kenyan architectural design and general building contractor. We combine visionary spatial drafting, meticulous structural calculations, and turnkey construction management under one accountable roof.
+                    </p>
+                    <p>
+                        By guiding every commission from raw schematic sketches, 3D photorealistic renderings, and statutory county approvals down to the final joinery fittings and structural key handover, we liberate property owners from the costly delays and finger-pointing common with fragmented subcontracting.
+                    </p>
+                </div>
+                <div class="mt-8 flex items-center gap-4 text-xs font-bold uppercase tracking-widest">
+                    <a href="#" class="text-brand-navy hover:text-brand-gold transition-colors flex items-center gap-2">OUR STORY & LEADERSHIP <span class="text-brand-gold">→</span></a>
+                    <span class="text-gray-300">|</span>
+                    <span class="text-gray-400">NAIROBI • MACHAKOS • NAKURU</span>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- OUR PHILOSOPHY -->
-    <section class="py-24 bg-brand-light px-6 md:px-12 lg:px-24">
-        <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
-            <div>
-                <span class="text-brand-gold font-bold tracking-widest uppercase text-[10px] block mb-4">The Guiding Conviction</span>
-                <h2 class="text-4xl font-serif font-bold text-brand-navy mb-8">Our Philosophy</h2>
-                <blockquote class="text-lg text-gray-500 font-serif italic mb-8 border-l-2 border-brand-gold pl-6 leading-relaxed">
+    <!-- 3. OUR PHILOSOPHY SECTION -->
+    <section class="py-24 px-6 md:px-12 lg:px-24 bg-white border-t border-gray-100 overflow-hidden">
+        <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
+            <!-- Left Text -->
+            <div class="pr-0 md:pr-10">
+                <span class="text-brand-gold font-bold tracking-widest uppercase text-[10px] block mb-4">THE GUIDING CONVICTION</span>
+                <h2 class="text-4xl md:text-5xl font-serif text-brand-navy mb-8">Our Philosophy</h2>
+                
+                <blockquote class="text-gray-500 italic font-serif text-lg leading-relaxed mb-8 border-l-2 border-brand-gold pl-6">
                     “Every project begins with understanding — the client, the site, the purpose and the possibilities. We translate these considerations into spaces that are thoughtful, functional and enduring.”
                 </blockquote>
-                <p class="text-sm text-gray-500 font-light leading-relaxed mb-12">
+                
+                <p class="text-gray-600 font-light leading-relaxed text-sm mb-12">
                     Architecture must transcend superficial ornamentation. At Rakaaj, every window orientation, structural beam, wall partition, and interior accent is calculated to maximize natural light ventilation, daily ergonomics, and long-term capital valuation.
                 </p>
-                <div class="grid grid-cols-2 gap-8">
+                
+                <div class="flex flex-col sm:flex-row gap-12">
                     <div>
-                        <span class="block text-2xl font-serif font-bold text-brand-navy mb-1">100%</span>
-                        <span class="text-[10px] text-gray-400 font-bold uppercase tracking-widest">Turnkey Delivery Control</span>
+                        <div class="text-4xl font-serif text-brand-navy mb-2">100%</div>
+                        <div class="text-[10px] text-gray-500 uppercase tracking-widest font-bold">TURNKEY DELIVERY CONTROL</div>
                     </div>
                     <div>
-                        <span class="block text-2xl font-serif font-bold text-brand-navy mb-1">0.00</span>
-                        <span class="text-[10px] text-gray-400 font-bold uppercase tracking-widest">BoQ Spec Ambiguity</span>
+                        <div class="text-4xl font-serif text-brand-navy mb-2">0.00</div>
+                        <div class="text-[10px] text-gray-500 uppercase tracking-widest font-bold">BOQ SPEC AMBIGUITY</div>
                     </div>
                 </div>
             </div>
             
-            <div class="relative mt-12 lg:mt-0 px-4 pb-4">
-                <!-- Gold Accent Frame -->
-                <div class="absolute top-0 left-0 w-full h-full border-t border-l border-brand-gold -translate-x-4 -translate-y-4 pointer-events-none"></div>
-                <div class="absolute bottom-0 right-0 w-full h-full border-b border-r border-brand-gold translate-x-4 translate-y-4 pointer-events-none"></div>
+            <!-- Right Image -->
+            <div class="relative mt-12 lg:mt-0">
+                <!-- Gold Brackets -->
+                <div class="absolute -top-6 -left-6 w-16 h-16 border-t-[1.5px] border-l-[1.5px] border-brand-gold z-0"></div>
+                <div class="absolute -bottom-6 -right-6 w-16 h-16 border-b-[1.5px] border-r-[1.5px] border-brand-gold z-0"></div>
                 
-                <img src="image_03ea39.jpg" alt="Interior Gallery" class="relative z-10 w-full shadow-xl">
+                <img src="https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=1000&q=80" alt="Westlands Executive Dining" class="relative z-10 w-full h-[500px] object-cover shadow-lg">
                 
-                <!-- Floating Label -->
-                <div class="absolute -bottom-6 left-8 bg-brand-navy text-white p-4 z-20 shadow-lg min-w-[250px]">
-                    <span class="text-brand-gold text-[8px] uppercase tracking-widest font-bold block mb-1">Craftsmanship</span>
-                    <h4 class="font-serif italic text-sm">Westlands Executive Dining & Interior Gallery</h4>
+                <div class="absolute -bottom-8 left-8 z-20 bg-brand-navy p-6 shadow-xl max-w-xs">
+                    <div class="text-brand-gold text-[10px] uppercase tracking-widest font-bold mb-2">CRAFTSMANSHIP</div>
+                    <div class="text-white font-serif italic text-lg leading-snug">Westlands Executive Dining & Interior Gallery</div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- INTEGRATED METHODOLOGY -->
-    <section class="py-24 bg-white px-6 md:px-12 lg:px-24 border-t border-gray-100">
-        <div class="max-w-3xl mx-auto text-center mb-20">
-            <span class="text-brand-gold font-bold tracking-widest uppercase text-[10px] block mb-4">Integrated Methodology</span>
-            <h2 class="text-4xl font-serif font-bold text-brand-navy mb-6">Where Design Meets Construction</h2>
-            <p class="text-sm text-gray-500 font-light leading-relaxed">
+    <!-- 4. INTEGRATED METHODOLOGY SECTION -->
+    <section class="py-24 px-6 md:px-12 lg:px-24 bg-[#fafafa]">
+        <div class="max-w-7xl mx-auto text-center mb-20">
+            <span class="text-brand-gold font-bold tracking-widest uppercase text-[10px] block mb-4">INTEGRATED METHODOLOGY</span>
+            <h2 class="text-4xl md:text-5xl font-serif text-brand-navy mb-6">Where Design Meets Construction</h2>
+            <p class="text-gray-500 font-light max-w-2xl mx-auto text-sm">
                 We bridge the historic divide between pure aesthetic designers and ground builders to deliver unified architectural integrity.
             </p>
         </div>
 
-        <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 relative">
-            <!-- Center Divider Line (Desktop) -->
-            <div class="hidden md:block absolute left-1/2 top-0 bottom-0 w-[1px] bg-gray-200 -translate-x-1/2"></div>
+        <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-16 relative">
+            <!-- Divider Line for Desktop -->
+            <div class="hidden md:block absolute top-0 bottom-0 left-1/2 w-[1px] bg-gray-200 -translate-x-1/2"></div>
 
             <!-- 01 DESIGN -->
-            <div class="md:pr-12">
-                <div class="flex items-center gap-4 mb-8">
-                    <div class="bg-brand-navy text-brand-gold w-10 h-10 flex items-center justify-center font-bold text-xs shadow-md">01</div>
+            <div class="pr-0 md:pr-10">
+                <div class="flex items-center gap-6 mb-6">
+                    <div class="w-14 h-14 bg-brand-navy text-brand-gold flex items-center justify-center font-serif text-lg">01</div>
                     <div>
-                        <h3 class="text-xl font-serif font-bold text-brand-navy uppercase">Design</h3>
-                        <span class="text-[9px] text-gray-400 font-bold uppercase tracking-widest">Architectural Vision & Spatial Planning</span>
+                        <h3 class="font-serif text-2xl text-brand-navy uppercase tracking-wide">DESIGN</h3>
+                        <p class="text-[10px] text-gray-400 uppercase tracking-widest font-bold">ARCHITECTURAL VISION & SPATIAL PLANNING</p>
                     </div>
                 </div>
-                <p class="text-sm text-gray-500 font-light leading-relaxed mb-8">
+                <p class="text-gray-600 font-light text-sm mb-8 leading-relaxed">
                     Every structure is drafted from functional purpose, translating client ambitions into buildable reality through meticulous iterations.
                 </p>
-                <ul class="space-y-4 text-sm text-gray-600 font-light">
-                    <li class="flex items-start gap-3">
-                        <span class="text-brand-gold mt-1">◩</span>
-                        <span><strong class="font-semibold text-brand-navy">Concept Development:</strong> Iterative massing studies, site orientation, and bespoke aesthetic sketches.</span>
+                <ul class="space-y-6 text-sm text-gray-600 font-light leading-relaxed">
+                    <li class="flex items-start gap-4">
+                        <span class="text-brand-gold mt-1">◬</span>
+                        <div><strong class="font-semibold text-brand-navy">Concept Development:</strong> Iterative massing studies, site orientation, and bespoke aesthetic sketches.</div>
                     </li>
-                    <li class="flex items-start gap-3">
-                        <span class="text-brand-gold mt-1">◩</span>
-                        <span><strong class="font-semibold text-brand-navy">Photorealistic 3D Visualizations:</strong> Hyper-accurate digital renders revealing light, textures, and scale.</span>
+                    <li class="flex items-start gap-4">
+                        <span class="text-brand-gold mt-1">⬟</span>
+                        <div><strong class="font-semibold text-brand-navy">Photorealistic 3D Visualizations:</strong> Hyper-accurate digital renders revealing light, textures, and scale.</div>
                     </li>
-                    <li class="flex items-start gap-3">
-                        <span class="text-brand-gold mt-1">◩</span>
-                        <span><strong class="font-semibold text-brand-navy">Functionality & Ergonomics:</strong> Living flow, spatial circulation, and customized room layouts.</span>
+                    <li class="flex items-start gap-4">
+                        <span class="text-brand-gold mt-1">📐</span>
+                        <div><strong class="font-semibold text-brand-navy">Functionality & Ergonomics:</strong> Living flow, spatial circulation, and customized room layouts.</div>
                     </li>
-                    <li class="flex items-start gap-3">
-                        <span class="text-brand-gold mt-1">◩</span>
-                        <span><strong class="font-semibold text-brand-navy">Material & Finish Selection:</strong> Specifying curated stone cladding, marble porcelain, and artisanal woods.</span>
+                    <li class="flex items-start gap-4">
+                        <span class="text-brand-gold mt-1">▤</span>
+                        <div><strong class="font-semibold text-brand-navy">Material & Finish Selection:</strong> Specifying curated stone cladding, marble porcelain, and artisanal woods.</div>
                     </li>
-                    <li class="flex items-start gap-3">
-                        <span class="text-brand-gold mt-1">◩</span>
-                        <span><strong class="font-semibold text-brand-navy">Statutory Development:</strong> Flawless county approvals, engineering vetting, and municipal paperwork.</span>
+                    <li class="flex items-start gap-4">
+                        <span class="text-brand-gold mt-1">📄</span>
+                        <div><strong class="font-semibold text-brand-navy">Statutory Development:</strong> Flawless county approvals, engineering vetting, and municipal paperwork.</div>
                     </li>
                 </ul>
             </div>
 
             <!-- 02 BUILD -->
-            <div class="md:pl-12">
-                <div class="flex items-center gap-4 mb-8">
-                    <div class="bg-brand-gold text-brand-navy w-10 h-10 flex items-center justify-center font-bold text-xs shadow-md">02</div>
+            <div class="pl-0 md:pl-10">
+                <div class="flex items-center gap-6 mb-6">
+                    <div class="w-14 h-14 bg-brand-gold text-brand-navy flex items-center justify-center font-serif text-lg">02</div>
                     <div>
-                        <h3 class="text-xl font-serif font-bold text-brand-navy uppercase">Build</h3>
-                        <span class="text-[9px] text-gray-400 font-bold uppercase tracking-widest">Structural Engineering & Execution</span>
+                        <h3 class="font-serif text-2xl text-brand-navy uppercase tracking-wide">BUILD</h3>
+                        <p class="text-[10px] text-gray-400 uppercase tracking-widest font-bold">STRUCTURAL ENGINEERING & EXECUTION</p>
                     </div>
                 </div>
-                <p class="text-sm text-gray-500 font-light leading-relaxed mb-8">
+                <p class="text-gray-600 font-light text-sm mb-8 leading-relaxed">
                     Rigorous ground management transforms technical drawings into solid concrete, steel, and handcrafted finishes with zero tolerance for compromise.
                 </p>
-                <ul class="space-y-4 text-sm text-gray-600 font-light">
-                    <li class="flex items-start gap-3">
-                        <span class="text-brand-gold mt-1">◩</span>
-                        <span><strong class="font-semibold text-brand-navy">Precision Workmanship:</strong> Qualified Kenyan artisans executing tight joint tolerances and structural mastery.</span>
+                <ul class="space-y-6 text-sm text-gray-600 font-light leading-relaxed">
+                    <li class="flex items-start gap-4">
+                        <span class="text-brand-gold mt-1">⚒</span>
+                        <div><strong class="font-semibold text-brand-navy">Precision Workmanship:</strong> Qualified Kenyan artisans executing tight joint tolerances and structural mastery.</div>
                     </li>
-                    <li class="flex items-start gap-3">
-                        <span class="text-brand-gold mt-1">◩</span>
-                        <span><strong class="font-semibold text-brand-navy">Certified Structural Materials:</strong> Verified rebar gauges, concrete batch control, and seasoned framing hardwoods.</span>
+                    <li class="flex items-start gap-4">
+                        <span class="text-brand-gold mt-1">🛡</span>
+                        <div><strong class="font-semibold text-brand-navy">Certified Structural Materials:</strong> Verified rebar gauges, concrete batch control, and seasoned framing hardwoods.</div>
                     </li>
-                    <li class="flex items-start gap-3">
-                        <span class="text-brand-gold mt-1">◩</span>
-                        <span><strong class="font-semibold text-brand-navy">Site Coordination & Daily Oversight:</strong> Direct supervision by registered foremen and lead builders.</span>
+                    <li class="flex items-start gap-4">
+                        <span class="text-brand-gold mt-1">⚲</span>
+                        <div><strong class="font-semibold text-brand-navy">Site Coordination & Daily Oversight:</strong> Direct supervision by registered foremen and lead builders.</div>
                     </li>
-                    <li class="flex items-start gap-3">
-                        <span class="text-brand-gold mt-1">◩</span>
-                        <span><strong class="font-semibold text-brand-navy">Transparent BoQ Tracking:</strong> Phased payment schedules tied strictly to vetted physical milestones.</span>
+                    <li class="flex items-start gap-4">
+                        <span class="text-brand-gold mt-1">📋</span>
+                        <div><strong class="font-semibold text-brand-navy">Transparent BoQ Tracking:</strong> Phased payment schedules tied strictly to vetted physical milestones.</div>
                     </li>
-                    <li class="flex items-start gap-3">
-                        <span class="text-brand-gold mt-1">◩</span>
-                        <span><strong class="font-semibold text-brand-navy">Defect-Free Turnkey Handover:</strong> Comprehensive snagging audits prior to delivering operational keys.</span>
+                    <li class="flex items-start gap-4">
+                        <span class="text-brand-gold mt-1">🗝</span>
+                        <div><strong class="font-semibold text-brand-navy">Defect-Free Turnkey Handover:</strong> Comprehensive snagging audits prior to delivering operational keys.</div>
                     </li>
                 </ul>
             </div>
         </div>
     </section>
 
-    <!-- WHAT WE STAND FOR -->
-    <section class="py-24 bg-brand-navy text-white px-6 md:px-12 lg:px-24">
+    <!-- 5. OUR OPERATING BEDROCK SECTION -->
+    <section class="py-24 px-6 md:px-12 lg:px-24 bg-brand-navy text-white">
         <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-start md:items-end mb-16 gap-8">
             <div>
-                <span class="text-brand-gold font-bold tracking-widest uppercase text-[10px] block mb-4">Our Operating Bedrock</span>
-                <h2 class="text-4xl md:text-5xl font-serif font-bold text-white">What We Stand For</h2>
+                <span class="text-brand-gold font-bold tracking-widest uppercase text-[10px] block mb-4">OUR OPERATING BEDROCK</span>
+                <h2 class="text-4xl md:text-5xl font-serif">What We Stand For</h2>
             </div>
-            <p class="text-sm text-gray-400 font-light max-w-sm md:text-right border-l md:border-l-0 md:border-r border-brand-gold/50 pl-4 md:pl-0 md:pr-4">
+            <p class="text-gray-400 font-light text-sm max-w-sm">
                 Five non-negotiable principles guiding every client conversation, architectural revision, and concrete pour.
             </p>
         </div>
 
-        <div class="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-4">
-            <!-- Cards -->
-            <div class="bg-brand-dark p-8 border border-white/5 hover:border-brand-gold/30 transition-colors">
-                <span class="text-brand-gold font-serif font-bold text-xl block mb-6">01</span>
-                <h3 class="text-sm font-serif font-bold uppercase mb-4 tracking-widest">Quality</h3>
-                <p class="text-xs text-gray-400 font-light leading-relaxed mb-6">We pay relentless attention to the details that determine the endurance, sensory feel, and longevity of a finished structure.</p>
-                <div class="w-6 h-[1px] bg-brand-gold"></div>
+        <div class="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6">
+            <!-- Card 1 -->
+            <div class="bg-brand-card p-8 hover:-translate-y-2 transition-transform duration-300 relative group">
+                <div class="text-brand-gold font-serif text-xl mb-6">01</div>
+                <h3 class="text-lg font-serif uppercase tracking-widest mb-4">QUALITY</h3>
+                <p class="text-xs text-gray-400 font-light leading-relaxed mb-6">
+                    We pay relentless attention to the details that determine the endurance, sensory feel, and longevity of a finished structure.
+                </p>
+                <div class="w-8 h-[1px] bg-brand-gold absolute bottom-8 left-8 transition-all group-hover:w-16"></div>
             </div>
-            
-            <div class="bg-brand-dark p-8 border border-white/5 hover:border-brand-gold/30 transition-colors">
-                <span class="text-brand-gold font-serif font-bold text-xl block mb-6">02</span>
-                <h3 class="text-sm font-serif font-bold uppercase mb-4 tracking-widest">Integrity</h3>
-                <p class="text-xs text-gray-400 font-light leading-relaxed mb-6">We build professional relationships based on complete honesty, verified site accountability, and transparent cost schedules.</p>
-                <div class="w-6 h-[1px] bg-brand-gold"></div>
+            <!-- Card 2 -->
+            <div class="bg-brand-card p-8 hover:-translate-y-2 transition-transform duration-300 relative group">
+                <div class="text-brand-gold font-serif text-xl mb-6">02</div>
+                <h3 class="text-lg font-serif uppercase tracking-widest mb-4">INTEGRITY</h3>
+                <p class="text-xs text-gray-400 font-light leading-relaxed mb-6">
+                    We build professional relationships based on complete honesty, verified site accountability, and transparent cost schedules.
+                </p>
+                <div class="w-8 h-[1px] bg-brand-gold absolute bottom-8 left-8 transition-all group-hover:w-16"></div>
             </div>
-
-            <div class="bg-brand-dark p-8 border border-white/5 hover:border-brand-gold/30 transition-colors">
-                <span class="text-brand-gold font-serif font-bold text-xl block mb-6">03</span>
-                <h3 class="text-sm font-serif font-bold uppercase mb-4 tracking-widest">Creativity</h3>
-                <p class="text-xs text-gray-400 font-light leading-relaxed mb-6">We approach each brief with curiosity, crafting thoughtful, contextual solutions rather than generic, predictable answers.</p>
-                <div class="w-6 h-[1px] bg-brand-gold"></div>
+            <!-- Card 3 -->
+            <div class="bg-brand-card p-8 hover:-translate-y-2 transition-transform duration-300 relative group">
+                <div class="text-brand-gold font-serif text-xl mb-6">03</div>
+                <h3 class="text-lg font-serif uppercase tracking-widest mb-4">CREATIVITY</h3>
+                <p class="text-xs text-gray-400 font-light leading-relaxed mb-6">
+                    We approach each brief with curiosity, crafting thoughtful, contextual solutions rather than generic, predictable answers.
+                </p>
+                <div class="w-8 h-[1px] bg-brand-gold absolute bottom-8 left-8 transition-all group-hover:w-16"></div>
             </div>
-
-            <div class="bg-brand-dark p-8 border border-white/5 hover:border-brand-gold/30 transition-colors">
-                <span class="text-brand-gold font-serif font-bold text-xl block mb-6">04</span>
-                <h3 class="text-sm font-serif font-bold uppercase mb-4 tracking-widest">Precision</h3>
-                <p class="text-xs text-gray-400 font-light leading-relaxed mb-6">We champion exact structural engineering calculations, accurate project scheduling, and coordinated on-site installation.</p>
-                <div class="w-6 h-[1px] bg-brand-gold"></div>
+            <!-- Card 4 -->
+            <div class="bg-brand-card p-8 hover:-translate-y-2 transition-transform duration-300 relative group">
+                <div class="text-brand-gold font-serif text-xl mb-6">04</div>
+                <h3 class="text-lg font-serif uppercase tracking-widest mb-4">PRECISION</h3>
+                <p class="text-xs text-gray-400 font-light leading-relaxed mb-6">
+                    We champion exact structural engineering calculations, accurate project scheduling, and coordinated on-site installation.
+                </p>
+                <div class="w-8 h-[1px] bg-brand-gold absolute bottom-8 left-8 transition-all group-hover:w-16"></div>
             </div>
-
-            <div class="bg-brand-dark p-8 border border-white/5 hover:border-brand-gold/30 transition-colors">
-                <span class="text-brand-gold font-serif font-bold text-xl block mb-6">05</span>
-                <h3 class="text-sm font-serif font-bold uppercase mb-4 tracking-widest">Collaboration</h3>
-                <p class="text-xs text-gray-400 font-light leading-relaxed mb-6">We work as disciplined partners alongside clients and stakeholders to turn architectural blueprints into lasting physical reality.</p>
-                <div class="w-6 h-[1px] bg-brand-gold"></div>
+            <!-- Card 5 -->
+            <div class="bg-brand-card p-8 hover:-translate-y-2 transition-transform duration-300 relative group">
+                <div class="text-brand-gold font-serif text-xl mb-6">05</div>
+                <h3 class="text-lg font-serif uppercase tracking-widest mb-4">COLLABORATION</h3>
+                <p class="text-xs text-gray-400 font-light leading-relaxed mb-6">
+                    We work as disciplined partners alongside clients and stakeholders to turn architectural blueprints into lasting physical reality.
+                </p>
+                <div class="w-8 h-[1px] bg-brand-gold absolute bottom-8 left-8 transition-all group-hover:w-16"></div>
             </div>
         </div>
     </section>
 
-    <!-- BUILT AROUND THE CLIENT -->
-    <section class="py-24 bg-white px-6 md:px-12 lg:px-24">
-        <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
-            <div class="relative order-2 lg:order-1 pt-4 pl-4">
-                <div class="absolute top-0 right-0 w-full h-full border-t border-r border-brand-gold translate-x-4 -translate-y-4 pointer-events-none"></div>
-                <img src="image_03e6dc.png" alt="Client-Centric Kitchen Space" class="relative z-10 w-full shadow-xl">
+    <!-- 6. CLIENT-CENTRIC ETHOS SECTION -->
+    <section class="py-24 px-6 md:px-12 lg:px-24 bg-white">
+        <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
+            <!-- Left Image -->
+            <div class="relative order-2 lg:order-1">
+                <!-- Gold Brackets -->
+                <div class="absolute -top-6 -left-6 w-16 h-16 border-t-[1.5px] border-l-[1.5px] border-brand-gold z-0"></div>
+                <div class="absolute -bottom-6 -right-6 w-16 h-16 border-b-[1.5px] border-r-[1.5px] border-brand-gold z-0"></div>
+                
+                <img src="https://images.unsplash.com/photo-1556910103-1c02745aae4d?auto=format&fit=crop&w=1000&q=80" alt="Modern Kitchen Interior" class="relative z-10 w-full object-cover shadow-lg">
             </div>
-            
+
+            <!-- Right Text -->
             <div class="order-1 lg:order-2">
-                <span class="text-brand-gold font-bold tracking-widest uppercase text-[10px] block mb-4">Client-Centric Ethos</span>
-                <h2 class="text-4xl font-serif font-bold text-brand-navy mb-6">Built Around the Client</h2>
-                <p class="text-sm text-gray-500 font-light leading-relaxed mb-10">
+                <span class="text-brand-gold font-bold tracking-widest uppercase text-[10px] block mb-4">CLIENT-CENTRIC ETHOS</span>
+                <h2 class="text-4xl md:text-5xl font-serif text-brand-navy mb-6">Built Around the Client</h2>
+                <p class="text-gray-600 font-light text-sm mb-10 leading-relaxed">
                     We reject one-size-fits-all construction. A family residence, commercial suite, or residential rental investment each carries distinct structural demands, capital considerations, and human routines.
                 </p>
-                
+
                 <ul class="space-y-8">
-                    <li class="flex items-start gap-4">
-                        <div class="mt-1 w-6 h-6 rounded-full bg-gray-100 flex items-center justify-center shrink-0">
-                            <span class="w-1.5 h-1.5 bg-brand-navy rounded-full"></span>
+                    <li class="flex items-start gap-6">
+                        <div class="w-6 h-6 mt-1 rounded-full border border-gray-300 flex items-center justify-center shrink-0">
+                            <div class="w-2 h-2 bg-gray-400 rounded-full"></div>
                         </div>
                         <div>
-                            <h4 class="text-[11px] font-bold text-brand-navy uppercase tracking-widest mb-1">Topography & Site Realities</h4>
-                            <p class="text-xs text-gray-500 font-light">Harnessing natural slopes, soil load-bearing profiles, and prevailing solar and wind orientations.</p>
+                            <h4 class="font-bold text-brand-navy text-xs uppercase tracking-widest mb-2">TOPOGRAPHY & SITE REALITIES</h4>
+                            <p class="text-gray-500 font-light text-xs leading-relaxed">Harnessing natural slopes, soil load-bearing profiles, and prevailing solar and wind orientations.</p>
                         </div>
                     </li>
-                    <li class="flex items-start gap-4">
-                        <div class="mt-1 w-6 h-6 rounded-full bg-gray-100 flex items-center justify-center shrink-0">
-                            <span class="w-1.5 h-1.5 bg-brand-navy rounded-full"></span>
+                    <li class="flex items-start gap-6">
+                        <div class="w-6 h-6 mt-1 rounded-full border border-gray-300 flex items-center justify-center shrink-0">
+                            <div class="w-2 h-2 bg-gray-400 rounded-full"></div>
                         </div>
                         <div>
-                            <h4 class="text-[11px] font-bold text-brand-navy uppercase tracking-widest mb-1">Financial Predictability</h4>
-                            <p class="text-xs text-gray-500 font-light">Realistic material quantity forecasting with fixed-scope procurement guarantees.</p>
+                            <h4 class="font-bold text-brand-navy text-xs uppercase tracking-widest mb-2">FINANCIAL PREDICTABILITY</h4>
+                            <p class="text-gray-500 font-light text-xs leading-relaxed">Realistic material quantity forecasting with fixed-scope procurement guarantees.</p>
                         </div>
                     </li>
-                    <li class="flex items-start gap-4">
-                        <div class="mt-1 w-6 h-6 rounded-full bg-gray-100 flex items-center justify-center shrink-0">
-                            <span class="w-1.5 h-1.5 bg-brand-navy rounded-full"></span>
+                    <li class="flex items-start gap-6">
+                        <div class="w-6 h-6 mt-1 rounded-full border border-gray-300 flex items-center justify-center shrink-0">
+                            <div class="w-2 h-2 bg-gray-400 rounded-full"></div>
                         </div>
                         <div>
-                            <h4 class="text-[11px] font-bold text-brand-navy uppercase tracking-widest mb-1">Enduring Capital Value</h4>
-                            <p class="text-xs text-gray-500 font-light">Employing finishes and construction methods that resist wear, weathering, and architectural obsolescence.</p>
+                            <h4 class="font-bold text-brand-navy text-xs uppercase tracking-widest mb-2">ENDURING CAPITAL VALUE</h4>
+                            <p class="text-gray-500 font-light text-xs leading-relaxed">Employing finishes and construction methods that resist wear, weathering, and architectural obsolescence.</p>
                         </div>
                     </li>
                 </ul>
@@ -356,230 +339,152 @@
         </div>
     </section>
 
-    <!-- PROVEN LEADERSHIP -->
-    <section class="py-24 bg-brand-light px-6 md:px-12 lg:px-24">
-        <div class="max-w-3xl mx-auto text-center mb-16">
-            <span class="text-brand-gold font-bold tracking-widest uppercase text-[10px] block mb-4">Proven Leadership & Reputation</span>
-            <h2 class="text-4xl font-serif font-bold text-brand-navy mb-6">The People Behind the Work</h2>
-            <p class="text-sm text-gray-500 font-light leading-relaxed">
+    <!-- 7. LEADERSHIP & REPUTATION SECTION -->
+    <section class="py-24 px-6 md:px-12 lg:px-24 bg-[#fcfcfc] border-t border-gray-100">
+        <div class="max-w-7xl mx-auto text-center mb-20">
+            <span class="text-brand-gold font-bold tracking-widest uppercase text-[10px] block mb-4">PROVEN LEADERSHIP & REPUTATION</span>
+            <h2 class="text-4xl md:text-5xl font-serif text-brand-navy mb-6">The People Behind the Work</h2>
+            <p class="text-gray-500 font-light max-w-2xl mx-auto text-sm">
                 Direct oversight, professional integrity, and seasoned technical mastership from our principal directorship.
             </p>
         </div>
 
-        <div class="max-w-5xl mx-auto bg-white p-8 md:p-12 shadow-sm border border-gray-100 grid grid-cols-1 md:grid-cols-5 gap-12 items-center">
-            <div class="md:col-span-2 relative group">
-                <img src="image_03e6ba.png" alt="Raphael Masila" class="w-full h-auto object-cover grayscale hover:grayscale-0 transition-all duration-500">
-                <div class="absolute bottom-4 right-4 bg-brand-navy/90 backdrop-blur text-brand-gold text-[8px] font-bold tracking-widest px-3 py-2 uppercase border border-brand-gold/30">
-                    Verified Director Credentials
+        <div class="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-12 items-center bg-white p-8 md:p-12 shadow-sm border border-gray-100">
+            <!-- Photo Side -->
+            <div class="lg:col-span-5 relative">
+                <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&w=800&q=80" alt="Raphael Masila" class="w-full object-cover h-[400px]">
+                <div class="absolute bottom-4 right-[-20px] bg-brand-navy text-brand-gold text-[10px] uppercase font-bold tracking-widest py-3 px-6 shadow-xl">
+                    VERIFIED DIRECTOR CREDENTIALS
                 </div>
             </div>
-            
-            <div class="md:col-span-3">
-                <span class="text-brand-gold font-bold tracking-widest uppercase text-[10px] block mb-2">Principal Director & Lead Builder</span>
-                <h3 class="text-3xl font-serif font-bold text-brand-navy mb-6">Raphael Masila</h3>
+
+            <!-- Details Side -->
+            <div class="lg:col-span-7 lg:pl-10">
+                <span class="text-brand-gold font-bold tracking-widest uppercase text-[10px] block mb-2">PRINCIPAL DIRECTOR & LEAD BUILDER</span>
+                <h3 class="text-3xl md:text-4xl font-serif text-brand-navy mb-6">Raphael Masila</h3>
                 
-                <p class="text-sm text-gray-500 font-light leading-relaxed mb-6">
+                <p class="text-gray-600 font-light text-sm mb-6 leading-relaxed">
                     With hands-on proficiency bridging creative architectural drafting and stringent on-site civil works, Raphael Masila directs all commissions at Rakaaj Designers & Builders Ltd. Under his personal oversight, the firm ensures architectural concept renders translate directly into physical reality without compromises in structural standards or client budgets.
                 </p>
-                
-                <div class="bg-brand-light p-4 border-l-2 border-brand-gold mb-8 text-xs text-gray-600 font-light leading-relaxed">
-                    <strong class="font-semibold text-brand-navy">Studio Collective:</strong> Supported by a trusted team of registered architectural draughtsmen, certified structural engineers, quantity surveyors, and dedicated site foremen working harmoniously across Kenyan counties.
+
+                <div class="bg-[#f9f9f9] border-l-4 border-brand-gold p-5 mb-8">
+                    <p class="text-xs text-gray-600 leading-relaxed">
+                        <strong class="font-semibold text-brand-navy">Studio Collective:</strong> Supported by a trusted team of registered architectural draughtsmen, certified structural engineers, quantity surveyors, and dedicated site foremen working harmoniously across Kenyan counties.
+                    </p>
                 </div>
-                
-                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-6">
-                    <div class="border border-gray-100 p-4">
-                        <span class="text-[9px] text-gray-400 font-bold uppercase tracking-widest block mb-1">Direct Phone</span>
-                        <a href="#" class="text-sm font-bold text-brand-navy flex items-center gap-2 hover:text-brand-gold transition-colors">
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-8">
+                    <div class="border border-gray-200 p-4">
+                        <div class="text-[10px] text-gray-400 uppercase tracking-widest font-bold mb-2">DIRECT PHONE</div>
+                        <div class="text-brand-navy font-bold text-sm flex items-center gap-2">
                             <span class="text-brand-gold">📞</span> +254 718 178773
-                        </a>
+                        </div>
                     </div>
-                    <div class="border border-gray-100 p-4">
-                        <span class="text-[9px] text-gray-400 font-bold uppercase tracking-widest block mb-1">Direct Email</span>
-                        <a href="#" class="text-sm font-bold text-brand-navy flex items-center gap-2 hover:text-brand-gold transition-colors">
+                    <div class="border border-gray-200 p-4">
+                        <div class="text-[10px] text-gray-400 uppercase tracking-widest font-bold mb-2">DIRECT EMAIL</div>
+                        <div class="text-brand-navy font-bold text-sm flex items-center gap-2">
                             <span class="text-brand-gold">✉</span> raphamasila@gmail.com
-                        </a>
+                        </div>
                     </div>
                 </div>
-                
-                <div class="flex flex-col sm:flex-row items-center gap-0 border border-gray-100">
-                    <a href="#" class="w-full sm:w-auto bg-[#075E54] text-white px-6 py-3 text-[10px] font-bold uppercase tracking-widest hover:bg-[#128C7E] transition-colors flex items-center justify-center gap-2">
-                        <span>💬</span> Direct WhatsApp Consultation
+
+                <div class="flex flex-col sm:flex-row items-center gap-4">
+                    <a href="https://wa.me/254718178773" class="w-full sm:w-auto bg-[#128C7E] text-white px-6 py-4 text-xs font-bold uppercase tracking-widest flex items-center justify-center gap-3 hover:bg-[#075E54] transition-colors">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M12.031 0C5.385 0 0 5.385 0 12.031c0 2.12.548 4.195 1.59 6.02L.031 24l6.108-1.564A11.96 11.96 0 0012.031 24c6.645 0 12.031-5.385 12.031-12.031S18.677 0 12.031 0zm0 22.015c-1.785 0-3.53-.48-5.06-1.385l-.36-.214-3.766.963.985-3.674-.236-.375a9.98 9.98 0 01-1.533-5.3 10.046 10.046 0 1110.045 10.045h-.075zm5.503-7.518c-.302-.152-1.785-.88-2.062-.98-.277-.102-.48-.152-.68.152-.203.303-.78 1.002-.956 1.204-.176.202-.352.226-.654.076a8.212 8.212 0 01-2.42-1.493 9.074 9.074 0 01-1.677-2.083c-.177-.302-.02-.465.132-.615.137-.137.303-.353.454-.53.15-.176.202-.302.302-.504.101-.202.05-.38-.026-.53-.075-.152-.68-1.642-.932-2.247-.245-.59-.494-.51-.68-.52h-.58c-.202 0-.53.076-.807.38-.277.302-1.058 1.033-1.058 2.518s1.083 2.923 1.234 3.125c.152.203 2.134 3.256 5.166 4.565 2.215.957 2.946 1.056 3.953.882 1.057-.183 2.998-1.226 3.425-2.408.428-1.182.428-2.193.302-2.406-.126-.213-.48-.337-.783-.49z"/></svg>
+                        DIRECT WHATSAPP CONSULTATION
                     </a>
-                    <div class="p-3 text-[10px] text-gray-500 flex-1 text-center sm:text-left bg-white">
-                        Handle: @rakaj designers & builders
-                    </div>
+                    <span class="text-xs text-gray-500">Handle: <strong class="text-brand-navy">@rakaj designers & builders</strong></span>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- PORTFOLIO PROOF -->
-    <section class="py-24 bg-brand-navy text-white px-6 md:px-12 lg:px-24">
+    <!-- 8. PORTFOLIO PROOF SECTION -->
+    <section class="py-24 px-6 md:px-12 lg:px-24 bg-brand-navy text-white border-b border-gray-800">
         <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-start md:items-end mb-16 gap-8">
             <div>
-                <span class="text-brand-gold font-bold tracking-widest uppercase text-[10px] block mb-4">Portfolio Proof</span>
-                <h2 class="text-4xl md:text-5xl font-serif font-bold">Our Work Speaks for Us</h2>
+                <span class="text-brand-gold font-bold tracking-widest uppercase text-[10px] block mb-4">PORTFOLIO PROOF</span>
+                <h2 class="text-4xl md:text-5xl font-serif">Our Work Speaks for Us</h2>
             </div>
-            <p class="text-sm text-gray-400 font-light max-w-sm md:text-right border-l md:border-l-0 md:border-r border-brand-gold/50 pl-4 md:pl-0 md:pr-4">
+            <p class="text-gray-400 font-light text-sm max-w-xs">
                 Explore selected projects that demonstrate our approach to architectural design, construction, and delivery.
             </p>
         </div>
 
-        <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-6">
+        <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-10">
             <!-- Project 1 -->
-            <div class="bg-brand-dark group cursor-pointer border border-white/5 hover:border-brand-gold/30 transition-colors">
-                <div class="relative overflow-hidden h-[300px]">
-                    <img src="image_03e69c.jpg" alt="The Lanet Residence" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
-                    <div class="absolute top-4 left-4 bg-brand-navy/90 text-gray-300 text-[8px] font-bold tracking-widest px-3 py-1 uppercase border border-gray-700">
-                        Completed Residential
-                    </div>
+            <div class="group cursor-pointer">
+                <div class="relative overflow-hidden h-[350px]">
+                    <div class="absolute top-4 left-4 z-20 bg-brand-navy/90 text-brand-gold text-[9px] uppercase tracking-widest font-bold py-1 px-3 border border-brand-gold/30">COMPLETED RESIDENTIAL</div>
+                    <img src="https://images.unsplash.com/photo-1613490908677-4df33b5a1902?auto=format&fit=crop&w=1000&q=80" alt="Lanet Residence" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
                 </div>
-                <div class="p-8">
-                    <span class="text-brand-gold text-[10px] uppercase tracking-widest font-bold mb-3 block">Nakuru / Nairobi, Kenya</span>
-                    <h3 class="text-2xl font-serif font-bold text-white mb-3">The Lanet Modern Flat-Roof Residence</h3>
-                    <p class="text-gray-400 text-xs font-light mb-8 line-clamp-2">Crisp cubic volumes, stone-clad feature walls, and cantilevered geometric overhangs designed for contemporary Kenyan living.</p>
-                    <div class="flex justify-between items-center border-t border-white/10 pt-4">
-                        <span class="text-[10px] font-bold uppercase tracking-widest text-brand-gold">Turnkey Construction</span>
-                        <span class="text-[10px] font-bold uppercase tracking-widest text-white group-hover:text-brand-gold transition-colors">View Case Study &rarr;</span>
+                <div class="bg-brand-card p-8">
+                    <span class="text-gray-400 font-bold tracking-widest uppercase text-[9px] block mb-3">NAKURU / NAIROBI, KENYA</span>
+                    <h3 class="text-2xl font-serif mb-4">The Lanet Modern Flat-Roof Residence</h3>
+                    <p class="text-gray-400 text-xs font-light leading-relaxed mb-8">
+                        Crisp cubic volumes, stone-clad feature walls, and cantilevered geometric overhangs designed for contemporary Kenyan living.
+                    </p>
+                    <div class="flex justify-between items-center text-[10px] font-bold uppercase tracking-widest text-brand-gold border-t border-gray-800 pt-6">
+                        <span>TURNKEY CONSTRUCTION</span>
+                        <span class="text-white group-hover:text-brand-gold transition-colors">View Case Study →</span>
                     </div>
                 </div>
             </div>
 
             <!-- Project 2 -->
-            <div class="bg-brand-dark group cursor-pointer border border-white/5 hover:border-brand-gold/30 transition-colors">
-                <div class="relative overflow-hidden h-[300px]">
-                    <img src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=800&q=80" alt="The Ridge Villa" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
-                    <div class="absolute top-4 left-4 bg-brand-navy/90 text-gray-300 text-[8px] font-bold tracking-widest px-3 py-1 uppercase border border-gray-700">
-                        Turnkey Villa
-                    </div>
+            <div class="group cursor-pointer">
+                <div class="relative overflow-hidden h-[350px]">
+                    <div class="absolute top-4 left-4 z-20 bg-brand-navy/90 text-brand-gold text-[9px] uppercase tracking-widest font-bold py-1 px-3 border border-brand-gold/30">TURNKEY VILLA</div>
+                    <img src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=1000&q=80" alt="Ridge Villa" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
                 </div>
-                <div class="p-8">
-                    <span class="text-brand-gold text-[10px] uppercase tracking-widest font-bold mb-3 block">Nairobi, Kenya</span>
-                    <h3 class="text-2xl font-serif font-bold text-white mb-3">The Ridge Contemporary Villa</h3>
-                    <p class="text-gray-400 text-xs font-light mb-8 line-clamp-2">A multi-level minimalist sanctuary featuring bold parapets, shaded recessed glazing, and seamless indoor-outdoor transitions.</p>
-                    <div class="flex justify-between items-center border-t border-white/10 pt-4">
-                        <span class="text-[10px] font-bold uppercase tracking-widest text-brand-gold">Architecture & Build</span>
-                        <span class="text-[10px] font-bold uppercase tracking-widest text-white group-hover:text-brand-gold transition-colors">View Case Study &rarr;</span>
+                <div class="bg-brand-card p-8">
+                    <span class="text-gray-400 font-bold tracking-widest uppercase text-[9px] block mb-3">NAIROBI, KENYA</span>
+                    <h3 class="text-2xl font-serif mb-4">The Ridge Contemporary Villa</h3>
+                    <p class="text-gray-400 text-xs font-light leading-relaxed mb-8">
+                        A multi-level minimalist sanctuary featuring bold parapets, shaded recessed glazing, and seamless indoor-outdoor transitions.
+                    </p>
+                    <div class="flex justify-between items-center text-[10px] font-bold uppercase tracking-widest text-brand-gold border-t border-gray-800 pt-6">
+                        <span>ARCHITECTURE & BUILD</span>
+                        <span class="text-white group-hover:text-brand-gold transition-colors">View Case Study →</span>
                     </div>
                 </div>
             </div>
         </div>
-        
-        <div class="text-center mt-12">
-            <a href="#" class="inline-block text-brand-gold font-bold uppercase tracking-widest text-[10px] border-b border-brand-gold pb-1 hover:text-white hover:border-white transition-colors">
-                Explore All Projects & Floor Plans &rarr;
-            </a>
+
+        <div class="text-center mt-16">
+            <a href="#" class="inline-block text-brand-gold text-xs font-bold uppercase tracking-widest hover:text-white transition-colors border-b border-brand-gold/30 pb-1">EXPLORE ALL PROJECTS & FLOOR PLANS →</a>
         </div>
     </section>
 
-    <!-- INITIATE A CONVERSATION -->
-    <section class="py-24 bg-white px-6 md:px-12 lg:px-24">
-        <div class="max-w-4xl mx-auto text-center">
-            <span class="text-brand-gold font-bold tracking-widest uppercase text-[10px] block mb-4">Initiate A Conversation</span>
-            <h2 class="text-4xl md:text-5xl font-serif font-bold text-brand-navy mb-6">Let's Build Something Meaningful.</h2>
-            <p class="text-sm text-gray-500 font-light max-w-2xl mx-auto mb-10 leading-relaxed">
+    <!-- 9. INITIATE A CONVERSATION SECTION -->
+    <section class="py-32 px-6 md:px-12 lg:px-24 bg-white text-center">
+        <div class="max-w-3xl mx-auto">
+            <span class="text-brand-gold font-bold tracking-widest uppercase text-[10px] block mb-4">INITIATE A CONVERSATION</span>
+            <h2 class="text-4xl md:text-5xl font-serif text-brand-navy mb-8">Let’s Build Something Meaningful.</h2>
+            <p class="text-gray-500 font-light text-sm md:text-base leading-relaxed mb-12">
                 Have an upcoming residential plot, commercial parcel, or interior modernization in mind? Talk with the Rakaaj engineering and architectural team about your vision, BoQ pricing, and timeline.
             </p>
             
-            <div class="flex flex-wrap justify-center gap-4 mb-8">
-                <a href="#" class="bg-brand-gold text-brand-navy px-8 py-4 text-[10px] font-bold uppercase tracking-widest hover:bg-yellow-500 transition-colors">Start a Project &rarr;</a>
-                <a href="#" class="bg-brand-navy text-white px-8 py-4 text-[10px] font-bold uppercase tracking-widest hover:bg-brand-dark transition-colors flex items-center gap-2">
-                    <span class="text-brand-gold">💬</span> Contact Us via WhatsApp
+            <div class="flex flex-col sm:flex-row justify-center items-center gap-4 mb-10">
+                <a href="#" class="w-full sm:w-auto bg-brand-gold text-brand-navy px-8 py-4 text-xs font-bold uppercase tracking-widest hover:bg-yellow-500 transition-colors">
+                    START A PROJECT →
+                </a>
+                <a href="https://wa.me/254718178773" class="w-full sm:w-auto bg-brand-navy text-white px-8 py-4 text-xs font-bold uppercase tracking-widest flex items-center justify-center gap-3 hover:bg-[#152347] transition-colors">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 text-brand-gold" fill="currentColor" viewBox="0 0 24 24"><path d="M12.031 0C5.385 0 0 5.385 0 12.031c0 2.12.548 4.195 1.59 6.02L.031 24l6.108-1.564A11.96 11.96 0 0012.031 24c6.645 0 12.031-5.385 12.031-12.031S18.677 0 12.031 0zm0 22.015c-1.785 0-3.53-.48-5.06-1.385l-.36-.214-3.766.963.985-3.674-.236-.375a9.98 9.98 0 01-1.533-5.3 10.046 10.046 0 1110.045 10.045h-.075zm5.503-7.518c-.302-.152-1.785-.88-2.062-.98-.277-.102-.48-.152-.68.152-.203.303-.78 1.002-.956 1.204-.176.202-.352.226-.654.076a8.212 8.212 0 01-2.42-1.493 9.074 9.074 0 01-1.677-2.083c-.177-.302-.02-.465.132-.615.137-.137.303-.353.454-.53.15-.176.202-.302.302-.504.101-.202.05-.38-.026-.53-.075-.152-.68-1.642-.932-2.247-.245-.59-.494-.51-.68-.52h-.58c-.202 0-.53.076-.807.38-.277.302-1.058 1.033-1.058 2.518s1.083 2.923 1.234 3.125c.152.203 2.134 3.256 5.166 4.565 2.215.957 2.946 1.056 3.953.882 1.057-.183 2.998-1.226 3.425-2.408.428-1.182.428-2.193.302-2.406-.126-.213-.48-.337-.783-.49z"/></svg>
+                    CONTACT US VIA WHATSAPP
                 </a>
             </div>
             
-            <p class="text-xs text-gray-400 font-light">
-                Direct Line: <strong class="font-bold text-brand-navy">+254 718 178 773</strong> • Consultations across Kenya
+            <p class="text-[11px] text-gray-500 uppercase tracking-widest font-bold">
+                Direct Line: <strong class="text-brand-navy">+254 718 178 773</strong> • Consultations across Kenya
             </p>
         </div>
     </section>
 
-    <!-- FOOTER -->
-    <footer class="bg-brand-navy pt-20 pb-8 px-6 md:px-12 lg:px-24 text-sm">
-        <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
-            <!-- Brand -->
-            <div>
-                <div class="flex items-center gap-3 mb-6">
-                    <div class="w-8 h-8 border border-brand-gold flex items-center justify-center rounded-sm bg-white/5">
-                        <span class="text-brand-gold font-bold text-xs">R</span>
-                    </div>
-                    <div>
-                        <h4 class="text-white font-serif font-bold tracking-wider leading-none m-0">RAKAAJ</h4>
-                        <p class="text-[8px] text-brand-gold tracking-widest uppercase mt-1 m-0">Designers & Builders Ltd</p>
-                    </div>
-                </div>
-                <p class="text-gray-400 font-light text-xs leading-relaxed mb-6">
-                    Rakaaj Designers & Builders brings together thoughtful design and quality construction to create spaces that are functional, distinctive, and built to last. Operating across Nairobi, Nakuru, Machakos, and all regions of Kenya.
-                </p>
-                <h4 class="text-white font-bold uppercase tracking-widest text-[10px] mb-4">Follow The Practice</h4>
-                <div class="flex gap-2">
-                    <a href="#" class="w-8 h-8 border border-gray-700 flex items-center justify-center text-gray-400 hover:text-brand-gold hover:border-brand-gold transition-colors text-xs">@</a>
-                    <a href="#" class="w-8 h-8 border border-gray-700 flex items-center justify-center text-gray-400 hover:text-brand-gold hover:border-brand-gold transition-colors text-xs">🎵</a>
-                    <a href="#" class="w-8 h-8 border border-gray-700 flex items-center justify-center text-gray-400 hover:text-brand-gold hover:border-brand-gold transition-colors text-xs">𝕏</a>
-                    <a href="#" class="w-8 h-8 border border-gray-700 flex items-center justify-center text-gray-400 hover:text-brand-gold hover:border-brand-gold transition-colors text-xs">💬</a>
-                </div>
-            </div>
+    <!-- INJECTED FOOTER -->
+    <div id="footer-placeholder"></div>
 
-            <!-- Explore Links -->
-            <div>
-                <h4 class="text-white font-bold uppercase tracking-widest text-[10px] mb-6">Explore</h4>
-                <ul class="space-y-3 text-gray-400 font-light text-xs">
-                    <li><a href="index.html" class="hover:text-brand-gold transition-colors">Home</a></li>
-                    <li><a href="about.html" class="text-brand-gold">About Us</a></li>
-                    <li><a href="#" class="hover:text-brand-gold transition-colors">Services</a></li>
-                    <li><a href="#" class="hover:text-brand-gold transition-colors">Projects</a></li>
-                    <li><a href="#" class="hover:text-brand-gold transition-colors">Our Approach</a></li>
-                    <li><a href="#" class="hover:text-brand-gold transition-colors">Leadership</a></li>
-                    <li><a href="#" class="hover:text-brand-gold transition-colors">Contact</a></li>
-                </ul>
-            </div>
-
-            <!-- Practice Areas -->
-            <div>
-                <h4 class="text-white font-bold uppercase tracking-widest text-[10px] mb-6">Practice Areas</h4>
-                <ul class="space-y-3 text-gray-400 font-light text-xs">
-                    <li>Architectural Planning & Design</li>
-                    <li>Structural Building Design</li>
-                    <li>Turnkey Civil Construction</li>
-                    <li>Interior Design & Cabinetry</li>
-                    <li>Bills of Quantities & Cost Control</li>
-                    <li>Residential Modernization</li>
-                </ul>
-            </div>
-
-            <!-- Office & Inquiries -->
-            <div>
-                <h4 class="text-white font-bold uppercase tracking-widest text-[10px] mb-6">Office & Inquiries</h4>
-                <ul class="space-y-4 text-gray-400 font-light text-xs">
-                    <li>
-                        <strong class="block text-white mb-1 text-[10px] uppercase tracking-widest">Head Office:</strong>
-                        Nairobi, Kenya
-                    </li>
-                    <li>
-                        <strong class="block text-white mb-1 text-[10px] uppercase tracking-widest">Direct Telephone:</strong>
-                        +254 718 178773
-                    </li>
-                    <li>
-                        <strong class="block text-white mb-1 text-[10px] uppercase tracking-widest">Direct Email:</strong>
-                        raphamasila@gmail.com
-                    </li>
-                    <li>
-                        <strong class="block text-white mb-1 text-[10px] uppercase tracking-widest">Practice Director:</strong>
-                        Raphael Masila
-                    </li>
-                </ul>
-            </div>
-        </div>
-
-        <div class="max-w-7xl mx-auto pt-8 border-t border-gray-800 flex flex-col md:flex-row justify-between items-center gap-4">
-            <p class="text-gray-500 text-[10px]">&copy; 2026 Rakaaj Designers & Builders Ltd. All rights reserved. Nairobi, Kenya.</p>
-            <div class="flex gap-4 text-[10px] text-gray-500">
-                <span class="hover:text-gray-300 cursor-pointer">Statutory Compliance</span> <span class="text-brand-gold">•</span> 
-                <span class="hover:text-gray-300 cursor-pointer">Architectural Integrity</span> <span class="text-brand-gold">•</span> 
-                <span class="hover:text-gray-300 cursor-pointer">Terms of Engagement</span>
-            </div>
-        </div>
-    </footer>
-
+    <!-- Ensure your main.js file handles injecting navbar.html and footer.html -->
+    <script src="main.js"></script>
 </body>
 </html>
