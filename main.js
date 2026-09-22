@@ -14,3 +14,29 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 });
+
+document.addEventListener("DOMContentLoaded", () => {
+    // 1. Load Navbar
+    fetch('navbar.html')
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById('navbar-placeholder').innerHTML = data;
+            
+            // Set active state on current page link
+            const currentPage = window.location.pathname.split("/").pop() || 'index.html';
+            const navLinks = document.querySelectorAll('.nav-links a');
+            
+            navLinks.forEach(link => {
+                if (link.getAttribute('data-page') === currentPage) {
+                    link.classList.add('text-brand-gold', 'border-b-2', 'border-brand-gold', 'pb-1');
+                }
+            });
+        });
+
+    // 2. Load Footer
+    fetch('footer.html')
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById('footer-placeholder').innerHTML = data;
+        });
+});
