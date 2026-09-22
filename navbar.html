@@ -1,34 +1,117 @@
-<!-- TOP CONTACT BAR -->
-<div class="bg-brand-dark text-gray-300 text-xs py-2 px-6 flex flex-col md:flex-row justify-between items-center border-b border-gray-700">
-    <div class="uppercase tracking-widest mb-2 md:mb-0">
-        Kenya Registered Practice • Architecture • Engineering • Turnkey Construction
-    </div>
-    <div class="flex space-x-6 items-center">
-        <span class="flex items-center gap-2">📞 +254 718 178773</span>
-        <span class="flex items-center gap-2 text-brand-gold">✉️ raphamasila@gmail.com</span>
-        <span>Nairobi, Kenya</span>
-    </div>
-</div>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Google Fonts: Montserrat & Playfair Display -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@0,600;0,700;1,400&display=swap" rel="stylesheet">
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-[#121c2d] font-sans antialiased text-white">
 
-<!-- MAIN NAVIGATION -->
-<nav id="mainNav" class="bg-brand-navy text-white px-6 py-4 flex justify-between items-center transition-all duration-300 z-50 relative">
-    <a href="index.html" class="flex items-center gap-3">
-        <div class="w-10 h-10 border border-brand-gold flex items-center justify-center rounded">
-            <span class="text-brand-gold font-bold">R</span>
+    <!-- ========================================== -->
+    <!-- NAVBAR COMPONENT START                     -->
+    <!-- ========================================== -->
+    
+    <header class="w-full bg-[#121c2d] border-b border-slate-800/60 font-sans">
+        
+        <!-- TOP CONTACT BAR -->
+        <div class="bg-[#0f1726] text-white text-[11px] py-2 px-6 lg:px-12 flex flex-col md:flex-row justify-between items-center border-b border-slate-800/80 font-semibold tracking-wider">
+            <!-- Left Info -->
+            <div class="flex items-center gap-2 mb-2 md:mb-0">
+                <span class="w-2 h-2 rounded-full bg-[#c89e2b] inline-block"></span>
+                <span class="uppercase text-slate-200">
+                    KENYA REGISTERED PRACTICE <span class="text-[#c89e2b] mx-1">•</span> ARCHITECTURE <span class="text-[#c89e2b] mx-1">•</span> ENGINEERING <span class="text-[#c89e2b] mx-1">•</span> TURNKEY CONSTRUCTION
+                </span>
+            </div>
+
+            <!-- Right Contact Details -->
+            <div class="flex items-center space-x-4 text-slate-300">
+                <!-- Phone -->
+                <a href="tel:+254718178773" class="flex items-center gap-2 hover:text-white transition-colors">
+                    <i class="fa-solid fa-phone text-[#c89e2b] text-[10px]"></i>
+                    <span class="font-bold text-white tracking-normal">+254 718 178773</span>
+                </a>
+                
+                <span class="text-slate-600 font-light">|</span>
+
+                <!-- Email -->
+                <a href="mailto:raphamasila@gmail.com" class="flex items-center gap-2 hover:text-white transition-colors">
+                    <i class="fa-solid fa-envelope text-[#c89e2b] text-[11px]"></i>
+                    <span class="lowercase text-slate-200">raphamasila@gmail.com</span>
+                </a>
+
+                <span class="text-slate-600 font-light">|</span>
+
+                <!-- Location -->
+                <span class="text-slate-300">Nairobi, Kenya</span>
+            </div>
         </div>
-        <div>
-            <h1 class="text-xl font-serif font-bold tracking-wider m-0">RAKAJ</h1>
-            <p class="text-[10px] text-brand-gold tracking-widest uppercase m-0">Designers & Builders Ltd</p>
-        </div>
-    </a>
-    <ul class="hidden lg:flex space-x-8 text-sm font-semibold uppercase tracking-wider nav-links">
-        <li><a href="index.html" class="hover:text-brand-gold transition-colors" data-page="index.html">Home</a></li>
-        <li><a href="about.html" class="hover:text-brand-gold transition-colors" data-page="about.html">About Us</a></li>
-        <li><a href="services.html" class="hover:text-brand-gold transition-colors" data-page="services.html">Services</a></li>
-        <li><a href="projects.html" class="hover:text-brand-gold transition-colors" data-page="projects.html">Projects</a></li>
-        <li><a href="contact.html" class="hover:text-brand-gold transition-colors" data-page="contact.html">Contact</a></li>
-    </ul>
-    <a href="contact.html" class="hidden lg:block bg-brand-gold text-brand-navy px-6 py-3 text-sm font-bold uppercase tracking-wider hover:bg-yellow-500 transition-colors">
-        Start a Project
-    </a>
-</nav>
+
+        <!-- MAIN NAVIGATION BAR -->
+        <nav class="px-6 lg:px-12 py-3.5 flex justify-between items-center sticky top-0 z-50 bg-[#121c2d]">
+            
+            <!-- Logo Section -->
+            <a href="index.html" class="flex items-center gap-3.5 group">
+                <!-- Logo Graphic Box -->
+                <div class="w-12 h-11 bg-[#233554] border border-slate-600/50 flex flex-col items-center justify-center p-1 rounded-sm shadow-inner">
+                    <svg class="w-6 h-6 text-[#c89e2b]" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 12l8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25"/>
+                    </svg>
+                </div>
+                <!-- Brand Name -->
+                <div class="flex flex-col">
+                    <span class="text-xl font-serif font-bold tracking-wider text-white leading-none">RAKAJ</span>
+                    <span class="text-[9px] text-[#c89e2b] font-bold tracking-widest uppercase mt-1">DESIGNERS & BUILDERS LTD</span>
+                </div>
+            </a>
+
+            <!-- Nav Links -->
+            <ul class="hidden lg:flex items-center space-x-7 text-[12px] font-bold uppercase tracking-wider">
+                <li>
+                    <a href="index.html" class="text-[#c89e2b] border-b-2 border-[#c89e2b] pb-1 transition-colors">HOME</a>
+                </li>
+                <li>
+                    <a href="about.html" class="text-slate-200 hover:text-[#c89e2b] transition-colors">ABOUT US</a>
+                </li>
+                <li>
+                    <a href="services.html" class="text-slate-200 hover:text-[#c89e2b] transition-colors">SERVICES</a>
+                </li>
+                <li>
+                    <a href="projects.html" class="text-slate-200 hover:text-[#c89e2b] transition-colors">PROJECTS</a>
+                </li>
+                <li>
+                    <a href="approach.html" class="text-slate-200 hover:text-[#c89e2b] transition-colors">OUR APPROACH</a>
+                </li>
+                <li>
+                    <a href="leadership.html" class="text-slate-200 hover:text-[#c89e2b] transition-colors">LEADERSHIP</a>
+                </li>
+                <li>
+                    <a href="contact.html" class="text-slate-200 hover:text-[#c89e2b] transition-colors">CONTACT</a>
+                </li>
+            </ul>
+
+            <!-- CTA Button & Mobile Toggle -->
+            <div class="flex items-center gap-4">
+                <a href="contact.html" class="bg-[#c89e2b] hover:bg-[#b58c23] text-[#0f1726] font-extrabold text-[12px] uppercase tracking-wider px-6 py-3 transition-colors shadow-md">
+                    START A PROJECT
+                </a>
+                
+                <!-- Mobile Menu Icon (Hidden on Desktop) -->
+                <button class="lg:hidden text-slate-300 hover:text-white focus:outline-none">
+                    <i class="fa-solid fa-bars text-xl"></i>
+                </button>
+            </div>
+            
+        </nav>
+    </header>
+
+    <!-- ========================================== -->
+    <!-- NAVBAR COMPONENT END                       -->
+    <!-- ========================================== -->
+
+</body>
+</html>
