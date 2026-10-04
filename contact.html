@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact — Rakaaj Designers & Builders</title>
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&display=swap" rel="stylesheet">
+    
+    <!-- Material Symbols -->
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet" />
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        navy: {
+                            800: '#111d35',
+                            900: '#0b1527',
+                            950: '#070c17'
+                        },
+                        gold: {
+                            DEFAULT: '#c19b36',
+                            hover: '#a8852d',
+                            light: '#f5f0e1'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Montserrat', 'sans-serif'],
+                        serif: ['Playfair Display', 'serif']
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .bg-grid-pattern {
+            background-size: 50px 50px;
+            background-image: 
+                linear-gradient(to right, rgba(0, 0, 0, 0.03) 1px, transparent 1px),
+                linear-gradient(to bottom, rgba(0, 0, 0, 0.03) 1px, transparent 1px);
+        }
+        
+        .material-symbols-outlined {
+            font-variation-settings:
+            'FILL' 0,
+            'wght' 300,
+            'GRAD' 0,
+            'opsz' 24
+        }
+        
+        /* Custom form input focus styles */
+        input:focus, textarea:focus, select:focus {
+            outline: none;
+            border-color: #0b1527;
+            box-shadow: 0 0 0 1px #0b1527;
+        }
+    </style>
+</head>
+<body class="bg-white font-sans antialiased text-slate-800">
+
+    <!-- ========================================== -->
+    <!-- NAVBAR PLACEHOLDER                         -->
+    <!-- ========================================== -->
+    <div id="navbar-placeholder"></div>
+
+    <!-- ========================================== -->
+    <!-- HERO SECTION                               -->
+    <!-- ========================================== -->
+    <section class="relative w-full bg-grid-pattern pt-16 pb-20 border-b border-slate-200">
+        <div class="max-w-[1300px] mx-auto px-6 lg:px-12">
+            
+            <div class="flex items-center text-[10px] font-bold tracking-widest uppercase text-navy-900 mb-8">
+                <div class="w-2 h-2 bg-gold mr-3"></div>
+                CONTACT // DIRECT INQUIRIES & STUDIO ACCESS
+            </div>
+
+            <div class="flex flex-col lg:flex-row lg:items-end justify-between gap-10">
+                <div class="max-w-2xl">
+                    <h1 class="text-5xl lg:text-7xl font-serif text-navy-900 tracking-tight leading-[1.1] mb-6">
+                        Let’s build something meaningful.
+                    </h1>
+                    <p class="text-slate-600 text-[16px] font-light leading-relaxed">
+                        Have a project in mind, need professional advice, or want to learn more about our services?<br> Get in touch with our team.
+                    </p>
+                </div>
+                
+                <div class="text-right text-[10px] font-bold tracking-widest uppercase text-slate-300 hidden lg:block">
+                    GRID REF: 01-17-S // 36-49-E<br>
+                    DATUM: NAIROBI METROPOLITAN AREA
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================================== -->
+    <!-- MAIN CONTENT: CONTACT INFO & FORM          -->
+    <!-- ========================================== -->
+    <section class="py-20 bg-white">
+        <div class="max-w-[1300px] mx-auto px-6 lg:px-12 grid grid-cols-1 lg:grid-cols-12 gap-16 lg:gap-12">
+            
+            <!-- LEFT COLUMN: Contact Information -->
+            <div class="lg:col-span-5">
+                <h4 class="text-[9px] font-bold text-gold tracking-widest uppercase mb-2">PRACTICE CHANNELS</h4>
+                <h2 class="text-3xl font-serif text-navy-900 mb-6">Get in touch</h2>
+                <p class="text-[14px] text-slate-600 font-light leading-relaxed mb-10 pr-4">
+                    Whether starting an initial brief, reviewing technical BoQ schedules, or organizing a site inspection, our directorship and engineering team are directly accessible.
+                </p>
+
+                <div class="space-y-4 mb-10">
+                    <!-- Studio Box -->
+                    <div class="bg-[#f8f9fa] border border-slate-100 p-6 shadow-sm">
+                        <div class="flex items-center gap-3 mb-4">
+                            <span class="material-symbols-outlined text-gold" style="font-size: 18px;">apartment</span>
+                            <h3 class="text-[10px] font-bold tracking-widest uppercase text-navy-900">STUDIO & OPERATIONS</h3>
+                        </div>
+                        <p class="text-[13px] text-slate-600 font-light mb-6">
+                            Nairobi Studio & Construction Operations, Westlands / Karen Axis, Nairobi, Kenya
+                        </p>
+                        <div class="flex justify-between items-center text-[9px] font-bold tracking-widest uppercase text-slate-500 border-t border-slate-200 pt-4">
+                            <span>ACTIVE SITE ACCESS ZONE</span>
+                            <span class="text-navy-900">HQ // SECTOR A</span>
+                        </div>
+                    </div>
+
+                    <!-- Phone Box -->
+                    <div class="bg-[#f8f9fa] border border-slate-100 p-6 shadow-sm flex justify-between items-center">
+                        <div>
+                            <div class="flex items-center gap-3 mb-2">
+                                <span class="material-symbols-outlined text-gold" style="font-size: 18px;">call</span>
+                                <h3 class="text-[10px] font-bold tracking-widest uppercase text-navy-900">PHONE LINES</h3>
+                            </div>
+                            <div class="text-xl font-bold text-navy-900 mb-1">+254 718 178773</div>
+                            <div class="text-[12px] text-slate-500 font-light">Direct line to Executive Project Director.</div>
+                        </div>
+                        <span class="text-[9px] font-bold tracking-widest uppercase text-slate-400">DIRECT</span>
+                    </div>
+
+                    <!-- Email Box -->
+                    <div class="bg-[#f8f9fa] border border-slate-100 p-6 shadow-sm flex justify-between items-center">
+                        <div>
+                            <div class="flex items-center gap-3 mb-2">
+                                <span class="material-symbols-outlined text-gold" style="font-size: 18px;">mail</span>
+                                <h3 class="text-[10px] font-bold tracking-widest uppercase text-navy-900">TECHNICAL DISPATCH</h3>
+                            </div>
+                            <div class="text-lg font-bold text-navy-900 mb-1">raphamasila@gmail.com</div>
+                            <div class="text-[12px] text-slate-500 font-light">Encrypted submissions for BoQs, tenders, and drawings.</div>
+                        </div>
+                        <span class="text-[9px] font-bold tracking-widest uppercase text-slate-400">24H SLA</span>
+                    </div>
+
+                    <!-- Hours Box -->
+                    <div class="bg-[#f8f9fa] border border-slate-100 p-6 shadow-sm">
+                        <div class="flex items-center gap-3 mb-3">
+                            <span class="material-symbols-outlined text-gold" style="font-size: 18px;">schedule</span>
+                            <h3 class="text-[10px] font-bold tracking-widest uppercase text-navy-900">WORKING HOURS</h3>
+                        </div>
+                        <div class="text-[13px] text-navy-900 font-medium mb-1">Monday – Friday: 8:00 AM – 5:00 PM EAT</div>
+                        <div class="text-[12px] text-slate-500 font-light italic">(Site audits and weekend consultations by scheduled appointment)</div>
+                    </div>
+                </div>
+
+                <!-- Direct Channels Links -->
+                <h4 class="text-[9px] font-bold text-slate-400 tracking-widest uppercase mb-4">DIRECT CHANNELS</h4>
+                <div class="grid grid-cols-2 gap-3 mb-8">
+                    <a href="https://wa.me/254718178773" class="border border-slate-200 p-3 flex justify-between items-center hover:border-navy-900 transition-colors group">
+                        <div class="flex items-center gap-2 text-[12px] font-medium text-navy-900">
+                            <div class="w-1.5 h-1.5 bg-green-500 rounded-full"></div> WhatsApp Chat
+                        </div>
+                        <span class="material-symbols-outlined text-slate-400 group-hover:text-navy-900 transition-colors" style="font-size: 16px;">arrow_outward</span>
+                    </a>
+                    <a href="tel:+254718178773" class="border border-slate-200 p-3 flex justify-between items-center hover:border-navy-900 transition-colors group">
+                        <div class="flex items-center gap-2 text-[12px] font-medium text-navy-900">
+                            <span class="material-symbols-outlined" style="font-size: 16px;">phone_in_talk</span> Voice Call
+                        </div>
+                        <span class="material-symbols-outlined text-slate-400 group-hover:text-navy-900 transition-colors" style="font-size: 16px;">arrow_outward</span>
+                    </a>
+                    <a href="mailto:raphamasila@gmail.com" class="border border-slate-200 p-3 flex justify-between items-center hover:border-navy-900 transition-colors group">
+                        <div class="flex items-center gap-2 text-[12px] font-medium text-navy-900">
+                            <span class="material-symbols-outlined" style="font-size: 16px;">send</span> Direct Email
+                        </div>
+                        <span class="material-symbols-outlined text-slate-400 group-hover:text-navy-900 transition-colors" style="font-size: 16px;">arrow_outward</span>
+                    </a>
+                    <a href="#" class="border border-slate-200 p-3 flex justify-between items-center hover:border-navy-900 transition-colors group">
+                        <div class="flex items-center gap-2 text-[12px] font-medium text-navy-900">
+                            <span class="material-symbols-outlined" style="font-size: 16px;">share</span> LinkedIn Page
+                        </div>
+                        <span class="material-symbols-outlined text-slate-400 group-hover:text-navy-900 transition-colors" style="font-size: 16px;">arrow_outward</span>
+                    </a>
+                </div>
+
+                <!-- Governance Note -->
+                <div class="bg-slate-50 border border-slate-200 p-5 flex items-start gap-4">
+                    <span class="material-symbols-outlined text-gold mt-1" style="font-size: 20px;">verified</span>
+                    <div>
+                        <h4 class="text-[9px] font-bold tracking-widest uppercase text-navy-900 mb-1">PRACTICE GOVERNANCE NOTE</h4>
+                        <p class="text-[11px] text-slate-500 font-light leading-relaxed">
+                            Registered under BORAQS (Board of Registration of Architects and Quantity Surveyors) & NCA (National Construction Authority Kenya) for statutory integrity and certified turnkey compliance.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- RIGHT COLUMN: Contact Form -->
+            <div class="lg:col-span-7">
+                <div class="border-l-4 border-navy-900 pl-8 lg:pl-12 py-2">
+                    <div class="flex justify-between items-end mb-8 relative">
+                        <div>
+                            <h4 class="text-[10px] font-bold text-gold tracking-widest uppercase mb-2">FORM REF: RKJ-ENQ-2025</h4>
+                            <h2 class="text-4xl font-serif text-navy-900">Send us an enquiry</h2>
+                        </div>
+                        <div class="absolute top-0 right-0 w-8 h-8 border-t-2 border-r-2 border-gold opacity-50"></div>
+                    </div>
+                    
+                    <p class="text-[14px] text-slate-600 font-light mb-10">
+                        Complete the project parameters below and our practice directorship will review and respond within 24 hours.
+                    </p>
+
+                    <form action="#" method="POST" class="space-y-6">
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                            <!-- Full Name -->
+                            <div>
+                                <label class="block text-[10px] font-bold text-navy-900 uppercase tracking-widest mb-2">Full Name <span class="text-gold">*</span></label>
+                                <input type="text" placeholder="e.g. David Mutiso" required
+                                    class="w-full border border-slate-200 px-4 py-3 text-[14px] text-slate-700 bg-white placeholder-slate-300">
+                            </div>
+                            <!-- Company -->
+                            <div>
+                                <label class="block text-[10px] font-bold text-navy-900 uppercase tracking-widest mb-2">Company / Organisation</label>
+                                <input type="text" placeholder="e.g. Private Estate / Commercial Dev" 
+                                    class="w-full border border-slate-200 px-4 py-3 text-[14px] text-slate-700 bg-white placeholder-slate-300">
+                            </div>
+                            <!-- Email -->
+                            <div>
+                                <label class="block text-[10px] font-bold text-navy-900 uppercase tracking-widest mb-2">Email Address <span class="text-gold">*</span></label>
+                                <input type="email" placeholder="name@domain.com" required
+                                    class="w-full border border-slate-200 px-4 py-3 text-[14px] text-slate-700 bg-white placeholder-slate-300">
+                            </div>
+                            <!-- Phone -->
+                            <div>
+                                <label class="block text-[10px] font-bold text-navy-900 uppercase tracking-widest mb-2">Phone Number <span class="text-gold">*</span></label>
+                                <input type="tel" placeholder="+254 700 000 000" required
+                                    class="w-full border border-slate-200 px-4 py-3 text-[14px] text-slate-700 bg-white placeholder-slate-300">
+                            </div>
+                        </div>
+
+                        <!-- Service Dropdown -->
+                        <div>
+                            <label class="block text-[10px] font-bold text-navy-900 uppercase tracking-widest mb-2">Service / Area of Interest <span class="text-gold">*</span></label>
+                            <div class="relative">
+                                <select required class="w-full border border-slate-200 px-4 py-3 text-[14px] text-slate-700 bg-white appearance-none cursor-pointer">
+                                    <option value="" disabled selected>Select primary project discipline...</option>
+                                    <option value="Turnkey Construction">Turnkey Construction</option>
+                                    <option value="Architectural Design">Architectural & Spatial Design</option>
+                                    <option value="BoQ">BoQ & Cost Engineering</option>
+                                    <option value="Interior">Interior Architecture & Joinery</option>
+                                    <option value="Renovation">Renovation & Structural Refurbishment</option>
+                                </select>
+                                <span class="material-symbols-outlined absolute right-4 top-1/2 transform -translate-y-1/2 text-slate-400 pointer-events-none" style="font-size: 20px;">expand_more</span>
+                            </div>
+                        </div>
+
+                        <!-- Requirement Tags -->
+                        <div>
+                            <span class="block text-[9px] font-bold text-slate-400 uppercase tracking-widest mb-3">Or select common requirement tags:</span>
+                            <div class="flex flex-wrap gap-2">
+                                <button type="button" class="bg-slate-50 border border-slate-200 text-slate-600 text-[11px] px-4 py-2 hover:border-navy-900 hover:text-navy-900 transition-colors">Turnkey Build</button>
+                                <button type="button" class="bg-slate-50 border border-slate-200 text-slate-600 text-[11px] px-4 py-2 hover:border-navy-900 hover:text-navy-900 transition-colors">Architectural Drawing</button>
+                                <button type="button" class="bg-slate-50 border border-slate-200 text-slate-600 text-[11px] px-4 py-2 hover:border-navy-900 hover:text-navy-900 transition-colors">BoQ Audit</button>
+                                <button type="button" class="bg-slate-50 border border-slate-200 text-slate-600 text-[11px] px-4 py-2 hover:border-navy-900 hover:text-navy-900 transition-colors">Refurbishment</button>
+                            </div>
+                        </div>
+
+                        <!-- Message -->
+                        <div>
+                            <label class="block text-[10px] font-bold text-navy-900 uppercase tracking-widest mb-2">Project Scope / Message <span class="text-gold">*</span></label>
+                            <textarea rows="4" placeholder="Briefly outline your site location, project requirements, or key timeline..." required
+                                class="w-full border border-slate-200 px-4 py-3 text-[14px] text-slate-700 bg-white placeholder-slate-300 resize-none"></textarea>
+                        </div>
+
+                        <!-- Submit Section -->
+                        <div class="flex flex-col sm:flex-row items-center gap-6 pt-4">
+                            <button type="submit" class="w-full sm:w-auto bg-gold hover:bg-gold-hover text-white font-bold text-[11px] uppercase tracking-wider px-10 py-4 transition-colors flex items-center justify-center gap-2">
+                                SEND ENQUIRY <span class="material-symbols-outlined" style="font-size: 16px;">east</span>
+                            </button>
+                            <div class="flex items-center gap-3">
+                                <span class="material-symbols-outlined text-gold" style="font-size: 20px;">lock</span>
+                                <p class="text-[11px] text-slate-500 font-medium italic">Strict confidentiality and NDA compliance assured for all proprietary briefs.</p>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ========================================== -->
+    <!-- STUDIO LOCATION SECTION                    -->
+    <!-- ========================================== -->
+    <section class="bg-slate-50 py-20 border-t border-slate-200">
+        <div class="max-w-[1300px] mx-auto px-6 lg:px-12">
+            
+            <div class="flex flex-col lg:flex-row justify-between items-start lg:items-end mb-12">
+                <div>
+                    <h4 class="text-[10px] font-bold text-gold tracking-widest uppercase mb-2">STUDIO LOCATION</h4>
+                    <h2 class="text-4xl font-serif text-navy-900">Visit Our Nairobi Office</h2>
+                </div>
+                <p class="text-slate-600 text-[15px] font-light max-w-md lg:text-right mt-4 lg:mt-0">
+                    Located within Nairobi's commercial core with active project coverage across the Nairobi Metropolitan and surrounding counties.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-2 bg-white border border-slate-200 shadow-sm overflow-hidden">
+                
+                <!-- Left: Map Image Placeholder -->
+                <div class="relative bg-slate-200 min-h-[400px] bg-grid-pattern">
+                    <!-- Faux Map UI elements mimicking the screenshot -->
+                    <div class="absolute inset-0 opacity-40">
+                        <img src="https://images.unsplash.com/photo-1524661135-423995f22d0b?auto=format&fit=crop&q=80&w=1200" alt="Map Area" class="w-full h-full object-cover grayscale mix-blend-multiply">
+                    </div>
+                    
+                    <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 flex flex-col items-center">
+                        <div class="w-10 h-10 bg-navy-900 border border-gold flex items-center justify-center mb-2">
+                            <span class="material-symbols-outlined text-gold" style="font-size: 20px;">architecture</span>
+                        </div>
+                        <div class="bg-navy-900 text-white text-[10px] font-bold uppercase tracking-widest px-3 py-1">
+                            RAKAAJ STUDIO HQ
+                        </div>
+                    </div>
+                    
+                    <div class="absolute bottom-6 left-6 bg-navy-900 text-white text-[9px] font-bold tracking-widest uppercase px-4 py-2 flex items-center gap-3">
+                        <div class="w-1.5 h-1.5 bg-gold"></div>
+                        NRB • 01° 17' S, 36° 49' E <span class="text-slate-500">|</span> ELEVATION: 1,795M
+                    </div>
+                </div>
+
+                <!-- Right: Location Details -->
+                <div class="p-10 lg:p-14 flex flex-col justify-center">
+                    <h4 class="text-[9px] font-bold text-gold tracking-widest uppercase mb-3">NAIROBI HEADQUARTERS</h4>
+                    <h3 class="text-2xl font-serif text-navy-900 mb-1">Rakaaj Designers & Builders Studio</h3>
+                    <p class="text-[13px] text-slate-500 font-light mb-10">Nairobi, Kenya • Central Metropolitan Hub</p>
+
+                    <div class="space-y-6 mb-10">
+                        <div class="flex items-start gap-4">
+                            <span class="material-symbols-outlined text-gold" style="font-size: 22px;">commute</span>
+                            <div>
+                                <h5 class="text-[12px] font-bold text-navy-900 mb-1">Accessibility:</h5>
+                                <p class="text-[13px] text-slate-600 font-light leading-relaxed">Convenient access via Waiyaki Way & Southern Bypass arteries.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-4">
+                            <span class="material-symbols-outlined text-gold" style="font-size: 22px;">local_parking</span>
+                            <div>
+                                <h5 class="text-[12px] font-bold text-navy-900 mb-1">Client Parking:</h5>
+                                <p class="text-[13px] text-slate-600 font-light leading-relaxed">Dedicated secure visitor parking available with prior gate clearance.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-4">
+                            <span class="material-symbols-outlined text-gold" style="font-size: 22px;">meeting_room</span>
+                            <div>
+                                <h5 class="text-[12px] font-bold text-navy-900 mb-1">Conference Suites:</h5>
+                                <p class="text-[13px] text-slate-600 font-light leading-relaxed">Physical sample lab & digital BoQ presentation rooms on-site.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <a href="#" class="w-full bg-navy-900 hover:bg-navy-800 text-white font-bold text-[11px] uppercase tracking-wider py-4 transition-colors flex items-center justify-center gap-2">
+                        GET DIRECTIONS <span class="material-symbols-outlined text-gold" style="font-size: 16px;">navigation</span>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ========================================== -->
+    <!-- CTA SECTION (DARK)                         -->
+    <!-- ========================================== -->
+    <section class="bg-navy-900 py-24 relative">
+        <div class="max-w-[800px] mx-auto px-6 text-center">
+            
+            <div class="flex items-center justify-center gap-3 mb-8">
+                <div class="w-1.5 h-1.5 bg-gold"></div>
+                <span class="text-[10px] font-bold tracking-widest uppercase text-gold">INITIATE A COMMISSION</span>
+            </div>
+
+            <h2 class="text-4xl md:text-5xl lg:text-6xl font-serif text-white mb-6 tracking-wide">
+                Have a project in mind? Let’s talk.
+            </h2>
+            
+            <p class="text-slate-300 text-[16px] font-light leading-relaxed mb-10 max-w-2xl mx-auto">
+                Our team is ready to understand your needs and explore how we can help take your vision from initial drafting to structural reality.
+            </p>
+
+            <div class="flex flex-col sm:flex-row justify-center items-center gap-4">
+                <a href="contact.html" class="w-full sm:w-auto bg-gold hover:bg-gold-hover text-navy-900 font-bold text-[11px] uppercase tracking-wider px-8 py-4 transition-colors flex items-center justify-center gap-2">
+                    START A CONVERSATION <span class="material-symbols-outlined" style="font-size: 16px;">chat</span>
+                </a>
+                <a href="#" class="w-full sm:w-auto border border-slate-700 bg-navy-950 hover:bg-slate-800 text-white font-bold text-[11px] uppercase tracking-wider px-8 py-4 transition-colors flex items-center justify-center gap-2">
+                    SUBMIT PROJECT BRIEF <span class="material-symbols-outlined" style="font-size: 16px;">assignment</span>
+                </a>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ========================================== -->
+    <!-- FOOTER PLACEHOLDER                         -->
+    <!-- ========================================== -->
+    <div id="footer-placeholder"></div>
+
+    <script src="main.js"></script>
+</body>
+</html>
