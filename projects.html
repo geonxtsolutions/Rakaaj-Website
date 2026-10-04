@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Projects - Rakaaj</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&display=swap" rel="stylesheet">
+    
+    <!-- Material Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        navy: '#0f172a',
+                        navy_light: '#1e293b',
+                        gold: '#d4af37',
+                        gold_dark: '#b4952f',
+                        gray_bg: '#f8f9fa',
+                        border_color: '#e2e8f0',
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        serif: ['Playfair Display', 'serif'],
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        /* Custom subtle grid background for the hero section */
+        .bg-grid-pattern {
+            background-image: 
+                linear-gradient(to right, #f1f5f9 1px, transparent 1px),
+                linear-gradient(to bottom, #f1f5f9 1px, transparent 1px);
+            background-size: 50px 50px;
+        }
+    </style>
+</head>
+<body class="font-sans text-gray-800 antialiased bg-white">
+
+    <!-- ========================================== -->
+    <!-- INSERT NAVBAR.HTML HERE                    -->
+    <!-- ========================================== -->
+    <div id="navbar-placeholder"></div>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="bg-grid-pattern pt-16 pb-12 px-6 md:px-12 lg:px-24">
+            <div class="max-w-7xl mx-auto">
+                <div class="flex items-center space-x-2 text-xs font-semibold text-gray-500 uppercase tracking-widest mb-6">
+                    <span>Home / Projects</span>
+                    <span>•</span>
+                    <span class="flex items-center text-navy"><span class="w-2 h-2 bg-gold mr-2 block"></span> SELECTED WORK • ARCHITECTURAL PORTFOLIO</span>
+                </div>
+                
+                <h1 class="text-5xl md:text-7xl font-serif text-navy font-bold mb-6 tracking-tight">Our Projects</h1>
+                <p class="text-lg md:text-xl text-gray-600 max-w-2xl mb-16">
+                    A selection of spaces, ideas and projects brought from concept to reality across Kenya.
+                </p>
+
+                <!-- 4 Info Blocks -->
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 bg-white border border-border_color shadow-sm">
+                    <div class="p-8 border-b md:border-b-0 md:border-r border-border_color">
+                        <span class="text-xs font-semibold text-gray-400 tracking-wider block mb-2">01 / TYPOLOGY</span>
+                        <h3 class="text-2xl font-serif text-navy font-semibold">Residential Villas</h3>
+                    </div>
+                    <div class="p-8 border-b md:border-b-0 lg:border-r border-border_color">
+                        <span class="text-xs font-semibold text-gray-400 tracking-wider block mb-2">02 / EXECUTION</span>
+                        <h3 class="text-2xl font-serif text-navy font-semibold">Turnkey Build</h3>
+                    </div>
+                    <div class="p-8 border-b md:border-b-0 md:border-r border-border_color">
+                        <span class="text-xs font-semibold text-gray-400 tracking-wider block mb-2">03 / SPECIALTY</span>
+                        <h3 class="text-2xl font-serif text-navy font-semibold">Custom Interiors</h3>
+                    </div>
+                    <div class="p-8">
+                        <span class="text-xs font-semibold text-gray-400 tracking-wider block mb-2">04 / ACCREDITATION</span>
+                        <h3 class="text-2xl font-serif text-gold font-semibold">Registered BORAQS</h3>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Philosophy & Filters -->
+        <section class="py-16 px-6 md:px-12 lg:px-24 border-t border-gray-100">
+            <div class="max-w-7xl mx-auto">
+                <div class="flex flex-col lg:flex-row justify-between items-start lg:items-center gap-10 mb-16">
+                    <div class="max-w-2xl">
+                        <span class="text-xs font-semibold text-gold tracking-widest uppercase mb-4 block">Practice Philosophy</span>
+                        <h2 class="text-4xl md:text-5xl font-serif text-navy font-semibold mb-6 leading-tight">Design Is Best Experienced Through the Work.</h2>
+                        <p class="text-gray-600 leading-relaxed">
+                            Every project presents a different opportunity — a different site, brief, context and set of requirements. Our portfolio brings together work that reflects the way we approach design, development and construction across Kenya.
+                        </p>
+                    </div>
+                    <div class="bg-gray_bg p-6 flex items-center space-x-4 border border-gray-200 min-w-[300px]">
+                        <div class="text-navy font-bold text-3xl font-serif">R</div>
+                        <div>
+                            <h4 class="font-semibold text-navy text-sm">Rakaaj Execution Standard</h4>
+                            <p class="text-xs text-gray-500 mt-1">ISO Aligned • Structural Reliability</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tabs -->
+                <div class="flex flex-wrap gap-2 md:gap-0 border border-gray-200 w-fit text-sm font-medium text-gray-500">
+                    <button class="px-6 py-3 bg-navy text-white flex items-center space-x-2"><span>All</span> <span class="text-gold text-xs">(06)</span></button>
+                    <button class="px-6 py-3 border-l border-gray-200 hover:bg-gray-50">Residential <span class="text-gray-400 text-xs ml-1">(03)</span></button>
+                    <button class="px-6 py-3 border-l border-gray-200 hover:bg-gray-50">Interiors <span class="text-gray-400 text-xs ml-1">(02)</span></button>
+                    <button class="px-6 py-3 border-l border-gray-200 hover:bg-gray-50">Turnkey Build <span class="text-gray-400 text-xs ml-1">(04)</span></button>
+                    <button class="px-6 py-3 border-l border-gray-200 hover:bg-gray-50">Renovation & Remodeling <span class="text-gray-400 text-xs ml-1">(01)</span></button>
+                    <button class="px-6 py-3 border-l border-gray-200 text-gray-300 cursor-not-allowed">Commercial (In Planning)</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Featured Commission -->
+        <section class="py-12 px-6 md:px-12 lg:px-24">
+            <div class="max-w-7xl mx-auto">
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-0 border border-gray-200 shadow-sm">
+                    <!-- Left: Image -->
+                    <div class="relative min-h-[400px] lg:min-h-full bg-gray-200">
+                        <!-- Placeholder for actual image: The Ridge Contemporary Villa -->
+                        <img src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=1000&q=80" alt="The Ridge Contemporary Villa" class="absolute inset-0 w-full h-full object-cover">
+                        
+                        <!-- Top Badges -->
+                        <div class="absolute top-6 left-6 flex space-x-2">
+                            <span class="bg-navy text-white text-xs font-semibold px-3 py-1 uppercase tracking-wider">Featured Commission</span>
+                            <span class="bg-gold text-navy text-xs font-semibold px-3 py-1 uppercase tracking-wider">Nairobi, Kenya</span>
+                        </div>
+
+                        <!-- Bottom Overlap Box -->
+                        <div class="absolute bottom-0 left-0 right-0 bg-navy text-white p-6 md:w-5/6 flex justify-between items-center">
+                            <div>
+                                <span class="text-xs text-gray-400 uppercase tracking-widest block mb-1">Structural Footprint</span>
+                                <h4 class="font-semibold text-lg">480 SQ.M • 5 BEDROOM TURNKEY RESIDENCE</h4>
+                            </div>
+                            <div class="text-gold text-sm font-semibold uppercase tracking-wider">Completed 2024</div>
+                        </div>
+                    </div>
+
+                    <!-- Right: Content -->
+                    <div class="p-10 md:p-16 bg-white flex flex-col justify-center">
+                        <span class="text-xs font-semibold text-gold tracking-widest uppercase mb-4 block">Commission Profile • 001</span>
+                        <h2 class="text-4xl font-serif text-navy font-semibold mb-6">The Ridge<br>Contemporary Villa</h2>
+                        <p class="text-gray-600 mb-10 leading-relaxed">
+                            A multi-level minimalist sanctuary featuring cantilevered parapets, graphite framing, and shaded recessed glazing engineered for seamless indoor-outdoor Kenyan living.
+                        </p>
+
+                        <div class="space-y-6 mb-12">
+                            <div class="flex gap-4">
+                                <span class="text-gold font-serif text-sm font-bold">01</span>
+                                <div>
+                                    <h4 class="font-semibold text-navy mb-1">The Brief</h4>
+                                    <p class="text-sm text-gray-500">Multi-generational contemporary residence maximizing natural lighting while ensuring structural climate efficiency.</p>
+                                </div>
+                            </div>
+                            <div class="flex gap-4">
+                                <span class="text-gold font-serif text-sm font-bold">02</span>
+                                <div>
+                                    <h4 class="font-semibold text-navy mb-1">The Approach</h4>
+                                    <p class="text-sm text-gray-500">Integrated architectural drafting coordinated with reinforced concrete foundation design and site-adapted civil works.</p>
+                                </div>
+                            </div>
+                            <div class="flex gap-4">
+                                <span class="text-gold font-serif text-sm font-bold">03</span>
+                                <div>
+                                    <h4 class="font-semibold text-navy mb-1">The Outcome</h4>
+                                    <p class="text-sm text-gray-500">Turnkey delivery with zero contractor fragmentation and precision stone & exterior textured render detailing.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="flex items-center justify-between border-t border-gray-100 pt-8 mt-auto">
+                            <a href="#" class="bg-navy hover:bg-navy_light text-white px-6 py-3 text-sm font-semibold inline-flex items-center transition">
+                                View Case Study & Floor Plans <span class="material-icons-outlined ml-2 text-sm">east</span>
+                            </a>
+                            <span class="text-xs text-gray-400 tracking-widest uppercase">Ref: RAK-NAI-01</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Curated Works -->
+        <section class="py-16 px-6 md:px-12 lg:px-24 bg-gray_bg">
+            <div class="max-w-7xl mx-auto">
+                <div class="flex justify-between items-end border-b border-gray-200 pb-6 mb-10">
+                    <div>
+                        <span class="text-xs font-semibold text-gold tracking-widest uppercase mb-2 block">Curated Works</span>
+                        <h2 class="text-4xl font-serif text-navy font-semibold">Built Structures & Interior Sanctuaries</h2>
+                    </div>
+                    <div class="hidden md:flex items-center space-x-2 text-xs font-semibold text-gray-500 uppercase tracking-widest">
+                        <span class="w-2 h-2 bg-gold block"></span>
+                        <span>Measured Architectural Specifications</span>
+                    </div>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Project 1 (Spans 2 columns on large screens) -->
+                    <div class="lg:col-span-2 bg-white shadow-sm group cursor-pointer border border-transparent hover:border-gray-200 transition">
+                        <div class="relative h-72 lg:h-96 bg-gray-200 overflow-hidden">
+                            <img src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=1200&q=80" alt="The Lanet Modern Flat-Roof Residence" class="w-full h-full object-cover group-hover:scale-105 transition duration-700">
+                            <div class="absolute top-4 left-4 bg-navy text-white text-xs font-semibold px-3 py-1 uppercase tracking-wider z-10">Turnkey Construction</div>
+                            <div class="absolute bottom-4 right-4 bg-white text-navy text-xs font-semibold px-3 py-1 uppercase tracking-wider shadow-sm z-10">Nakuru • Residential</div>
+                        </div>
+                        <div class="p-8">
+                            <div class="flex justify-between items-start mb-4">
+                                <h3 class="text-3xl font-serif text-navy font-semibold">The Lanet Modern Flat-Roof Residence</h3>
+                                <a href="#" class="hidden sm:inline-flex items-center text-sm font-semibold text-navy border border-gray-300 px-4 py-2 hover:bg-gray-50">Review Spec <span class="material-icons-outlined ml-2 text-sm">east</span></a>
+                            </div>
+                            <p class="text-gray-600 mb-8 max-w-2xl">Clean cubic geometry, stone-clad entrance portico, and thermal-break black aluminum fenestrations.</p>
+                            <div class="flex flex-wrap text-xs text-gray-400 tracking-widest uppercase gap-y-2">
+                                <span>Scope: Architecture + BOQ + Build</span>
+                                <span class="mx-3">•</span>
+                                <span>Roofing: Reinforced Slab with Membrane</span>
+                                <span class="mx-3">•</span>
+                                <span>Year: 2024</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 2 -->
+                    <div class="bg-white shadow-sm group cursor-pointer border border-transparent hover:border-gray-200 transition flex flex-col">
+                        <div class="relative h-64 bg-gray-200 overflow-hidden">
+                            <img src="https://images.unsplash.com/photo-1556910103-1c02745aae4d?auto=format&fit=crop&w=800&q=80" alt="Marula Minimalist Kitchen Suite" class="w-full h-full object-cover group-hover:scale-105 transition duration-700">
+                            <div class="absolute top-4 left-4 bg-gold text-white text-xs font-semibold px-3 py-1 uppercase tracking-wider z-10">Bespoke Interiors</div>
+                        </div>
+                        <div class="p-8 flex flex-col flex-grow">
+                            <span class="text-xs text-gray-400 tracking-widest uppercase block mb-2">Karen, Nairobi</span>
+                            <h3 class="text-2xl font-serif text-navy font-semibold mb-4">Marula Minimalist Kitchen Suite</h3>
+                            <p class="text-gray-600 mb-8 text-sm flex-grow">Backlit display cabinetry, Calacatta quartz waterfall counters, integrated induction array, and soft-touch matte anthracite finishes.</p>
+                            <div class="flex justify-between items-center text-xs font-semibold uppercase tracking-widest border-t border-gray-100 pt-6">
+                                <span class="text-gray-400">Joinery & Lighting</span>
+                                <span class="text-navy flex items-center">Details <span class="material-icons-outlined ml-1 text-sm">east</span></span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 3 -->
+                    <div class="bg-white shadow-sm group cursor-pointer border border-transparent hover:border-gray-200 transition flex flex-col">
+                        <div class="relative h-64 bg-white overflow-hidden flex items-center justify-center p-8 border-b border-gray-100">
+                            <!-- Placeholder for Logo graphic from screenshot -->
+                            <div class="text-center">
+                                <div class="w-16 h-16 bg-gold mx-auto mb-2 clip-path-house"></div>
+                                <h3 class="font-serif font-bold text-2xl text-navy">RAKAJ</h3>
+                                <p class="text-[10px] tracking-widest font-semibold text-gray-500 mb-4">DESIGNERS & BUILDERS LTD</p>
+                                <p class="text-xl font-bold text-green-600 flex items-center justify-center gap-2"><span class="material-icons-outlined">whatsapp</span> 0718 178 773</p>
+                            </div>
+                            <div class="absolute top-4 left-4 bg-navy text-white text-xs font-semibold px-3 py-1 uppercase tracking-wider z-10">Interior Architecture</div>
+                        </div>
+                        <div class="p-8 flex flex-col flex-grow">
+                            <span class="text-xs text-gray-400 tracking-widest uppercase block mb-2">Westlands, Nairobi</span>
+                            <h3 class="text-xl font-serif text-navy font-semibold mb-4">Westlands Executive Dining Gallery</h3>
+                            <p class="text-gray-600 mb-8 text-sm flex-grow">Bespoke solid timber banquet dining table, warm recessed cove lighting, and acoustic wall cladding for ambient entertaining.</p>
+                            <div class="flex justify-between items-center text-xs font-semibold uppercase tracking-widest border-t border-gray-100 pt-6">
+                                <span class="text-gray-400">Luxury Residential</span>
+                                <span class="text-navy flex items-center">Details <span class="material-icons-outlined ml-1 text-sm">east</span></span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 4 -->
+                    <div class="bg-white shadow-sm group cursor-pointer border border-transparent hover:border-gray-200 transition flex flex-col">
+                        <div class="relative h-64 bg-gray-200 overflow-hidden">
+                            <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=800&q=80" alt="Lanet Villa: Portico & Fenestration" class="w-full h-full object-cover group-hover:scale-105 transition duration-700">
+                            <div class="absolute top-4 left-4 bg-navy text-white text-xs font-semibold px-3 py-1 uppercase tracking-wider z-10">Facade Engineering</div>
+                        </div>
+                        <div class="p-8 flex flex-col flex-grow">
+                            <span class="text-xs text-gray-400 tracking-widest uppercase block mb-2">Facade Detail</span>
+                            <h3 class="text-xl font-serif text-navy font-semibold mb-4">Lanet Villa: Portico & Fenestration</h3>
+                            <p class="text-gray-600 mb-8 text-sm flex-grow">Crisp geometric lines, cantilevered sun-shading parapets, recessed porch entry, and drought-tolerant landscape integration.</p>
+                            <div class="flex justify-between items-center text-xs font-semibold uppercase tracking-widest border-t border-gray-100 pt-6">
+                                <span class="text-gray-400">Structural Elevation</span>
+                                <span class="text-navy flex items-center">Details <span class="material-icons-outlined ml-1 text-sm">east</span></span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 5 -->
+                    <div class="bg-white shadow-sm group cursor-pointer border border-transparent hover:border-gray-200 transition flex flex-col">
+                        <div class="relative h-64 bg-gray-200 overflow-hidden">
+                            <img src="https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&w=800&q=80" alt="Lanet Villa: Garden Axis" class="w-full h-full object-cover group-hover:scale-105 transition duration-700">
+                            <div class="absolute top-4 left-4 bg-gold text-white text-xs font-semibold px-3 py-1 uppercase tracking-wider z-10">Site & Civil Works</div>
+                        </div>
+                        <div class="p-8 flex flex-col flex-grow">
+                            <span class="text-xs text-gray-400 tracking-widest uppercase block mb-2">Site Context</span>
+                            <h3 class="text-xl font-serif text-navy font-semibold mb-4">Lanet Villa: Garden Axis & Approach</h3>
+                            <p class="text-gray-600 mb-8 text-sm flex-grow">Full site master planning including perimeter boundary defense, interlocking concrete paver driveway, and rainwater drainage conduits.</p>
+                            <div class="flex justify-between items-center text-xs font-semibold uppercase tracking-widest border-t border-gray-100 pt-6">
+                                <span class="text-gray-400">Civil + Landscape</span>
+                                <span class="text-navy flex items-center">Details <span class="material-icons-outlined ml-1 text-sm">east</span></span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Manifesto -->
+        <section class="bg-navy py-24 px-6 text-center text-white relative">
+            <!-- Subtle grid pattern on dark bg -->
+            <div class="absolute inset-0 opacity-10 pointer-events-none" style="background-image: linear-gradient(to right, #ffffff 1px, transparent 1px), linear-gradient(to bottom, #ffffff 1px, transparent 1px); background-size: 50px 50px;"></div>
+            
+            <div class="max-w-4xl mx-auto relative z-10">
+                <div class="flex items-center justify-center space-x-2 text-xs font-semibold text-gray-400 uppercase tracking-widest mb-10">
+                    <span class="w-2 h-2 bg-gold block"></span>
+                    <span>Architectural Manifesto</span>
+                </div>
+                <h2 class="text-4xl md:text-6xl font-serif italic mb-10 leading-tight">
+                    “Spaces are shaped by ideas. Ideas become meaningful when they are built.”
+                </h2>
+                <p class="text-lg md:text-xl text-gray-300 max-w-2xl mx-auto leading-relaxed">
+                    We bring complete alignment between design creativity and structural building science. From county approvals and Bill of Quantities to the final lockset installation.
+                </p>
+            </div>
+        </section>
+
+        <!-- Technical Governance Table -->
+        <section class="py-16 px-6 md:px-12 lg:px-24 bg-white">
+            <div class="max-w-7xl mx-auto">
+                <span class="text-xs font-semibold text-gold tracking-widest uppercase mb-4 block flex items-center gap-2"><span class="w-2 h-2 bg-gold block"></span> Technical Governance</span>
+                <h2 class="text-3xl md:text-4xl font-serif text-navy font-semibold mb-4">Project Specification & Engineering Standards</h2>
+                <p class="text-gray-600 mb-10 max-w-3xl">
+                    Precision is built into our practice. Every commission follows codified engineering protocols, cost discipline, and statutory compliance under Kenya building codes.
+                </p>
+
+                <div class="overflow-x-auto border border-gray-200">
+                    <table class="w-full text-left text-sm">
+                        <thead class="bg-gray-50 text-xs font-semibold text-navy uppercase tracking-widest border-b border-gray-200">
+                            <tr>
+                                <th class="px-6 py-5 w-1/5">Stage / Discipline</th>
+                                <th class="px-6 py-5 w-1/4">Technical Parameters</th>
+                                <th class="px-6 py-5 w-1/4">Deliverable Artifacts</th>
+                                <th class="px-6 py-5 w-1/5">Governance & Codes</th>
+                                <th class="px-6 py-5 text-right">Turnkey Status</th>
+                            </tr>
+                        </thead>
+                        <tbody class="divide-y divide-gray-200">
+                            <tr class="hover:bg-gray-50 transition">
+                                <td class="px-6 py-6 font-semibold text-navy flex items-center gap-2"><span class="w-1.5 h-1.5 bg-gold block"></span> 01. Architectural Planning</td>
+                                <td class="px-6 py-6 text-gray-600">Solar orientation, passive cross-ventilation, functional spatial zoning</td>
+                                <td class="px-6 py-6 text-gray-600">Full 2D Cadastral Plans, 3D Photoreal Renders, Sections</td>
+                                <td class="px-6 py-6 text-gray-600">BORAQS & County Physical Planning Act</td>
+                                <td class="px-6 py-6 text-right font-semibold text-gold">100% Certified</td>
+                            </tr>
+                            <tr class="hover:bg-gray-50 transition">
+                                <td class="px-6 py-6 font-semibold text-navy flex items-center gap-2"><span class="w-1.5 h-1.5 bg-gold block"></span> 02. Structural Engineering</td>
+                                <td class="px-6 py-6 text-gray-600">Reinforced concrete columns, slab deflection analysis, foundation soil test</td>
+                                <td class="px-6 py-6 text-gray-600">Bending Schedules, Structural Framing Calculations</td>
+                                <td class="px-6 py-6 text-gray-600">Engineers Board of Kenya (EBK) Stamp</td>
+                                <td class="px-6 py-6 text-right font-semibold text-gold">100% Certified</td>
+                            </tr>
+                            <tr class="hover:bg-gray-50 transition">
+                                <td class="px-6 py-6 font-semibold text-navy flex items-center gap-2"><span class="w-1.5 h-1.5 bg-gold block"></span> 03. Quantity Surveying (BoQ)</td>
+                                <td class="px-6 py-6 text-gray-600">Standard Method of Measurement, material price indexing, cash-flow projection</td>
+                                <td class="px-6 py-6 text-gray-600">Unpriced & Priced Bill of Quantities, Milestone Schedule</td>
+                                <td class="px-6 py-6 text-gray-600">IQSK Measurement Code of Kenya</td>
+                                <td class="px-6 py-6 text-right font-semibold text-gold">Zero Variance Target</td>
+                            </tr>
+                            <tr class="hover:bg-gray-50 transition">
+                                <td class="px-6 py-6 font-semibold text-navy flex items-center gap-2"><span class="w-1.5 h-1.5 bg-gold block"></span> 04. Turnkey Construction</td>
+                                <td class="px-6 py-6 text-gray-600">Direct site management, batch concrete testing, waterproofing inspections</td>
+                                <td class="px-6 py-6 text-gray-600">Weekly Site Logs, Material Inward Registers, QA Certs</td>
+                                <td class="px-6 py-6 text-gray-600">NCA Category Regulated Execution</td>
+                                <td class="px-6 py-6 text-right font-semibold text-gold">Active Supervision</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <!-- End-to-End Execution -->
+        <section class="py-16 px-6 md:px-12 lg:px-24 bg-gray_bg border-t border-gray-200">
+            <div class="max-w-7xl mx-auto">
+                <span class="text-xs font-semibold text-gold tracking-widest uppercase mb-4 block">End-to-End Execution</span>
+                <h2 class="text-4xl font-serif text-navy font-semibold mb-6">From Design to Delivery</h2>
+                <p class="text-gray-600 mb-12 max-w-2xl">
+                    Our projects bring together design thinking, technical development and construction expertise — creating a connected journey from the first idea to the finished space.
+                </p>
+
+                <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4">
+                    <a href="#" class="bg-white p-8 border border-gray-100 shadow-sm hover:shadow-md transition group flex flex-col justify-between h-48">
+                        <div>
+                            <span class="text-xs text-gray-400 block mb-2">01</span>
+                            <h4 class="font-semibold text-navy text-lg leading-tight">Architectural Design</h4>
+                        </div>
+                        <div class="flex items-center justify-between text-xs font-semibold uppercase tracking-widest text-gray-400 group-hover:text-navy transition">
+                            Explore discipline <span class="material-icons-outlined text-sm">east</span>
+                        </div>
+                    </a>
+                    <a href="#" class="bg-white p-8 border border-gray-100 shadow-sm hover:shadow-md transition group flex flex-col justify-between h-48">
+                        <div>
+                            <span class="text-xs text-gray-400 block mb-2">02</span>
+                            <h4 class="font-semibold text-navy text-lg leading-tight">Building Development</h4>
+                        </div>
+                        <div class="flex items-center justify-between text-xs font-semibold uppercase tracking-widest text-gray-400 group-hover:text-navy transition">
+                            Explore discipline <span class="material-icons-outlined text-sm">east</span>
+                        </div>
+                    </a>
+                    <a href="#" class="bg-white p-8 border border-gray-100 shadow-sm hover:shadow-md transition group flex flex-col justify-between h-48">
+                        <div>
+                            <span class="text-xs text-gray-400 block mb-2">03</span>
+                            <h4 class="font-semibold text-navy text-lg leading-tight">Turnkey Construction</h4>
+                        </div>
+                        <div class="flex items-center justify-between text-xs font-semibold uppercase tracking-widest text-gray-400 group-hover:text-navy transition">
+                            Explore discipline <span class="material-icons-outlined text-sm">east</span>
+                        </div>
+                    </a>
+                    <a href="#" class="bg-white p-8 border border-gray-100 shadow-sm hover:shadow-md transition group flex flex-col justify-between h-48">
+                        <div>
+                            <span class="text-xs text-gray-400 block mb-2">04</span>
+                            <h4 class="font-semibold text-navy text-lg leading-tight">Interior Design</h4>
+                        </div>
+                        <div class="flex items-center justify-between text-xs font-semibold uppercase tracking-widest text-gray-400 group-hover:text-navy transition">
+                            Explore discipline <span class="material-icons-outlined text-sm">east</span>
+                        </div>
+                    </a>
+                    <a href="#" class="bg-white p-8 border border-gray-100 shadow-sm hover:shadow-md transition group flex flex-col justify-between h-48">
+                        <div>
+                            <span class="text-xs text-gray-400 block mb-2">05</span>
+                            <h4 class="font-semibold text-navy text-lg leading-tight">Renovation & Remodel</h4>
+                        </div>
+                        <div class="flex items-center justify-between text-xs font-semibold uppercase tracking-widest text-gray-400 group-hover:text-navy transition">
+                            Explore discipline <span class="material-icons-outlined text-sm">east</span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA / Dialogue Section -->
+        <section class="py-16 px-6 md:px-12 lg:px-24 pb-32">
+            <div class="max-w-7xl mx-auto bg-navy text-white p-12 md:p-20 relative overflow-hidden flex flex-col md:flex-row items-center justify-between gap-12">
+                <!-- Background decorative elements based on screenshot -->
+                <div class="absolute right-0 top-0 bottom-0 opacity-10 pointer-events-none w-1/2 bg-center bg-no-repeat bg-contain" style="background-image: url('data:image/svg+xml;utf8,<svg width=\"200\" height=\"200\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M100 0 L200 100 L100 200 L0 100 Z\" fill=\"white\"/></svg>');"></div>
+                
+                <div class="relative z-10 max-w-2xl">
+                    <span class="text-xs font-semibold text-gold tracking-widest uppercase mb-4 block flex items-center gap-2"><span class="w-2 h-2 bg-gold block"></span> Direct Principal Dialogue</span>
+                    <h2 class="text-4xl md:text-5xl font-serif font-semibold mb-6">Have a Project in Mind?</h2>
+                    <p class="text-gray-300 text-lg mb-10">
+                        Whether you are starting with an idea, developing a design or preparing to build, let’s talk about what you want to create.
+                    </p>
+                    
+                    <div class="flex flex-wrap gap-4 mb-12">
+                        <a href="#" class="bg-gold hover:bg-gold_dark text-navy px-8 py-4 text-sm font-bold uppercase tracking-wider flex items-center transition">
+                            Start a Project <span class="material-icons-outlined ml-2 text-base">east</span>
+                        </a>
+                        <a href="#" class="border border-white hover:bg-white/10 text-white px-8 py-4 text-sm font-bold uppercase tracking-wider flex items-center transition">
+                            <span class="material-icons-outlined mr-2 text-base">chat</span> Direct WhatsApp Consultation
+                        </a>
+                    </div>
+                    
+                    <div class="flex flex-wrap items-center text-xs font-semibold text-gray-400 uppercase tracking-widest gap-y-2">
+                        <span class="text-white">Lead Director: Raphael Masila</span>
+                        <span class="mx-3">•</span>
+                        <span>Direct: +254 718 178773</span>
+                        <span class="mx-3">•</span>
+                        <span>Nairobi, Kenya</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- ========================================== -->
+    <!-- INSERT FOOTER.HTML HERE                    -->
+    <!-- ========================================== -->
+    <!-- INJECTED FOOTER -->
+    <div id="footer-placeholder"></div>
+
+    <!-- Ensure your main.js file handles injecting navbar.html and footer.html -->
+    <script src="main.js"></script>
+
+</body>
+</html>
