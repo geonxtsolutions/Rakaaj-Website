@@ -1,0 +1,636 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Approach — Rakaaj Designers & Builders</title>
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&display=swap" rel="stylesheet">
+    
+    <!-- Material Symbols -->
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet" />
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        navy: {
+                            800: '#111d35',
+                            900: '#0b1527',
+                            950: '#070c17'
+                        },
+                        gold: {
+                            DEFAULT: '#c19b36',
+                            hover: '#a8852d',
+                            light: '#f5f0e1'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Montserrat', 'sans-serif'],
+                        serif: ['Playfair Display', 'serif']
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .bg-grid-pattern {
+            background-size: 50px 50px;
+            background-image: 
+                linear-gradient(to right, rgba(0, 0, 0, 0.04) 1px, transparent 1px),
+                linear-gradient(to bottom, rgba(0, 0, 0, 0.04) 1px, transparent 1px);
+        }
+        
+        .material-symbols-outlined {
+            font-variation-settings:
+            'FILL' 0,
+            'wght' 300,
+            'GRAD' 0,
+            'opsz' 24
+        }
+    </style>
+</head>
+<body class="bg-[#fafafa] font-sans antialiased text-slate-800">
+
+    <!-- ========================================== -->
+    <!-- HEADER & NAVBAR                            -->
+    <!-- ========================================== -->
+    <header class="w-full bg-white border-b border-slate-200 font-sans sticky top-0 z-50">
+        <!-- TOP CONTACT BAR -->
+        <div class="bg-[#0f1726] text-white text-[10px] py-2 px-6 lg:px-12 flex flex-col md:flex-row justify-between items-center tracking-wider">
+            <div class="flex items-center gap-2 mb-2 md:mb-0">
+                <span class="w-1.5 h-1.5 rounded-none bg-gold inline-block"></span>
+                <span class="uppercase text-slate-200 font-semibold">
+                    KENYA REGISTERED PRACTICE <span class="text-slate-500 mx-1">•</span> ARCHITECTURE <span class="text-slate-500 mx-1">•</span> ENGINEERING <span class="text-slate-500 mx-1">•</span> TURNKEY CONSTRUCTION
+                </span>
+            </div>
+            <div class="flex items-center space-x-5 text-slate-300 font-medium">
+                <a href="tel:+254718178773" class="flex items-center gap-1.5 hover:text-white transition-colors">
+                    <span class="material-symbols-outlined text-gold" style="font-size: 14px;">call</span>
+                    <span class="text-white">+254 718 178773</span>
+                </a>
+                <span class="text-slate-600 font-light">|</span>
+                <a href="mailto:raphamasila@gmail.com" class="flex items-center gap-1.5 hover:text-white transition-colors">
+                    <span class="material-symbols-outlined text-gold" style="font-size: 14px;">mail</span>
+                    <span class="lowercase text-slate-200">raphamasila@gmail.com</span>
+                </a>
+                <span class="text-slate-600 font-light">|</span>
+                <span class="flex items-center gap-1.5">
+                    <span class="material-symbols-outlined text-gold" style="font-size: 14px;">location_on</span>
+                    Nairobi, Kenya
+                </span>
+            </div>
+        </div>
+
+        <!-- MAIN NAVBAR -->
+        <nav class="px-6 lg:px-12 py-3 lg:py-0 flex justify-between items-center bg-white shadow-sm">
+            <a href="index.html" class="flex items-center gap-3 py-3">
+                <div class="w-10 h-10 border border-slate-800 flex items-center justify-center p-1">
+                    <span class="text-slate-900 font-bold text-xl font-serif">R</span>
+                </div>
+                <div class="flex flex-col">
+                    <span class="text-[22px] font-serif font-semibold tracking-wider text-slate-900 leading-none">RAKAAJ</span>
+                    <span class="text-[8px] text-slate-500 font-bold tracking-widest uppercase mt-1">DESIGNERS & BUILDERS <span class="text-gold">•</span> KENYA</span>
+                </div>
+            </a>
+            
+            <ul class="hidden lg:flex items-center space-x-8 text-[11px] font-bold uppercase tracking-widest h-full">
+                <li class="h-full flex items-center py-7"><a href="index.html" class="text-slate-600 hover:text-navy-900 transition-colors">HOME</a></li>
+                <li class="h-full flex items-center py-7"><a href="about.html" class="text-slate-600 hover:text-navy-900 transition-colors">ABOUT US</a></li>
+                <li class="h-full flex items-center py-7"><a href="services.html" class="text-slate-600 hover:text-navy-900 transition-colors">SERVICES</a></li>
+                <li class="h-full flex items-center py-7"><a href="projects.html" class="text-slate-600 hover:text-navy-900 transition-colors">PROJECTS</a></li>
+                <li class="h-full flex items-center py-7 relative border-b-2 border-gold text-navy-900">
+                    <a href="approach.html">OUR APPROACH</a>
+                    <span class="absolute top-4 right-[-6px] w-1 h-1 bg-gold"></span>
+                </li>
+                <li class="h-full flex items-center py-7"><a href="leadership.html" class="text-slate-600 hover:text-navy-900 transition-colors">LEADERSHIP</a></li>
+                <li class="h-full flex items-center py-7"><a href="contact.html" class="text-slate-600 hover:text-navy-900 transition-colors flex items-center gap-1">CONTACT <span class="material-symbols-outlined text-gold" style="font-size: 14px;">call</span></a></li>
+            </ul>
+            
+            <div class="hidden lg:flex items-center gap-4">
+                <div class="text-right mr-2">
+                    <span class="block text-[13px] font-bold text-navy-900 leading-tight">+254 718 178773</span>
+                </div>
+                <a href="contact.html" class="bg-[#c19b36] hover:bg-[#a8852d] text-white font-bold text-[11px] uppercase tracking-wider px-6 py-4 transition-colors flex items-center gap-2">
+                    START A PROJECT <span class="material-symbols-outlined" style="font-size: 16px;">east</span>
+                </a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- ========================================== -->
+    <!-- HERO SECTION & RATIONALE                   -->
+    <!-- ========================================== -->
+    <section class="relative w-full bg-grid-pattern pt-12 pb-20 border-b border-slate-200">
+        <div class="max-w-[1400px] mx-auto px-6 lg:px-12">
+            
+            <!-- Breadcrumb Area -->
+            <div class="flex flex-col md:flex-row justify-between items-start md:items-center text-[9px] font-bold tracking-widest uppercase text-slate-400 mb-16">
+                <div class="flex items-center gap-2 mb-4 md:mb-0">
+                    <a href="index.html" class="text-slate-500 hover:text-navy-900 transition-colors">HOME</a> 
+                    <span>/</span> 
+                    <a href="approach.html" class="text-navy-900">OUR APPROACH</a>
+                    <span class="text-slate-300 font-light mx-1">/</span>
+                    <span class="text-gold">REF: 05-METH</span>
+                </div>
+                <div class="bg-slate-100 border border-slate-200 px-3 py-1.5 flex items-center gap-2">
+                    <span class="w-1.5 h-1.5 bg-gold"></span>
+                    <span class="text-slate-700">INTEGRATED DESIGN-BUILD DELIVERY MODEL</span>
+                    <span class="text-slate-300 mx-1">|</span>
+                    <span class="text-slate-400">NAIROBI HQ</span>
+                </div>
+            </div>
+
+            <!-- Hero Main Text -->
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-start mb-24">
+                <div class="lg:col-span-6 space-y-4">
+                    <h2 class="text-[10px] font-bold text-gold tracking-widest uppercase flex items-center gap-2">
+                        OUR APPROACH • METHODOLOGY & DELIVERY FRAMEWORK
+                    </h2>
+                    <h1 class="text-5xl lg:text-7xl font-serif text-navy-900 tracking-tight leading-none">
+                        From Idea to Reality<span class="text-gold">.</span>
+                    </h1>
+                </div>
+                <div class="lg:col-span-6 lg:pt-10">
+                    <div class="border-l-2 border-gold pl-6 lg:pl-8 max-w-lg">
+                        <p class="text-slate-600 text-lg lg:text-xl font-light leading-relaxed">
+                            A clear, connected process that brings together design, development, technical precision, and turnkey construction under one cohesive framework.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Rationale Text -->
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-center pt-8 border-t border-slate-200/50">
+                <div class="lg:col-span-5 flex items-center gap-4">
+                    <span class="border border-gold text-gold text-[10px] px-2 py-1 uppercase tracking-widest font-bold">00 // RATIONALE</span>
+                    <h3 class="text-2xl lg:text-3xl font-serif font-bold text-navy-900">One Process. Clear Direction.</h3>
+                </div>
+                <div class="lg:col-span-7">
+                    <p class="text-slate-600 text-[15px] font-light leading-relaxed max-w-3xl">
+                        We believe projects work better when design, technical development and construction are considered together. Our approach keeps the process focused, coordinated and aligned with the client's strategic goals.
+                    </p>
+                </div>
+            </div>
+            
+        </div>
+    </section>
+
+    <!-- ========================================== -->
+    <!-- END-TO-END ARCHITECTURAL SEQUENCE          -->
+    <!-- ========================================== -->
+    <section class="py-16 bg-white">
+        <div class="max-w-[1400px] mx-auto px-6 lg:px-12">
+            
+            <!-- Headers -->
+            <div class="flex flex-col md:flex-row justify-between items-end border-b-2 border-slate-100 pb-4 mb-8 text-[9px] font-bold uppercase tracking-widest">
+                <h4 class="text-navy-900 flex items-center gap-3">
+                    END-TO-END ARCHITECTURAL SEQUENCE 
+                    <span class="text-slate-400 font-medium normal-case tracking-normal">[01 → 05 Continuous Workflow]</span>
+                </h4>
+                <div class="text-slate-500 mt-4 md:mt-0">
+                    EXECUTION VELOCITY • 100% QUALITY ASSURANCE
+                </div>
+            </div>
+
+            <!-- 5 Steps Grid -->
+            <div class="grid grid-cols-1 lg:grid-cols-5 border border-slate-200 divide-y lg:divide-y-0 lg:divide-x divide-slate-200 shadow-sm bg-white">
+                
+                <!-- STAGE 1 -->
+                <div class="p-8 flex flex-col h-full hover:bg-slate-50 transition-colors">
+                    <div class="flex justify-between items-start mb-6">
+                        <span class="text-gold font-bold text-sm">01</span>
+                        <div class="w-2.5 h-2.5 border-2 border-navy-900"></div>
+                    </div>
+                    <div class="flex-grow">
+                        <span class="text-[9px] font-bold text-slate-400 uppercase tracking-widest block mb-2">STAGE 01</span>
+                        <h3 class="text-2xl font-serif text-navy-900 uppercase tracking-widest mb-4">Understand</h3>
+                        <p class="text-sm font-bold text-navy-900 leading-snug mb-4">We start with the brief.</p>
+                        <p class="text-[13px] text-slate-500 font-light leading-relaxed mb-12">
+                            Understand the client's needs, priorities, site, context, budget considerations and project objectives before any line is drawn.
+                        </p>
+                    </div>
+                    <div class="border-t border-slate-100 pt-4 flex justify-between items-center text-[10px] font-bold uppercase tracking-widest text-slate-600 mt-auto">
+                        <span>Site Analysis & Brief</span>
+                        <span class="material-symbols-outlined text-gold" style="font-size: 16px;">check_circle</span>
+                    </div>
+                </div>
+
+                <!-- STAGE 2 -->
+                <div class="p-8 flex flex-col h-full hover:bg-slate-50 transition-colors">
+                    <div class="flex justify-between items-start mb-6">
+                        <span class="text-gold font-bold text-sm">02</span>
+                        <div class="w-2.5 h-2.5 border-2 border-navy-900"></div>
+                    </div>
+                    <div class="flex-grow">
+                        <span class="text-[9px] font-bold text-slate-400 uppercase tracking-widest block mb-2">STAGE 02</span>
+                        <h3 class="text-2xl font-serif text-navy-900 uppercase tracking-widest mb-4">Design</h3>
+                        <p class="text-sm font-bold text-navy-900 leading-snug mb-4">We turn the brief into a clear design direction.</p>
+                        <p class="text-[13px] text-slate-500 font-light leading-relaxed mb-12">
+                            Develop concepts, spatial ideas, architectural solutions and design options that respond rigorously to the project requirements.
+                        </p>
+                    </div>
+                    <div class="border-t border-slate-100 pt-4 flex justify-between items-center text-[10px] font-bold uppercase tracking-widest text-slate-600 mt-auto">
+                        <span>Schematic Concepts</span>
+                        <span class="material-symbols-outlined text-gold" style="font-size: 16px;">architecture</span>
+                    </div>
+                </div>
+
+                <!-- STAGE 3 -->
+                <div class="p-8 flex flex-col h-full hover:bg-slate-50 transition-colors">
+                    <div class="flex justify-between items-start mb-6">
+                        <span class="text-gold font-bold text-sm">03</span>
+                        <div class="w-2.5 h-2.5 border-2 border-navy-900"></div>
+                    </div>
+                    <div class="flex-grow">
+                        <span class="text-[9px] font-bold text-slate-400 uppercase tracking-widest block mb-2">STAGE 03</span>
+                        <h3 class="text-2xl font-serif text-navy-900 uppercase tracking-widest mb-4">Develop</h3>
+                        <p class="text-sm font-bold text-navy-900 leading-snug mb-4">We turn the concept into a buildable solution.</p>
+                        <p class="text-[13px] text-slate-500 font-light leading-relaxed mb-12">
+                            Develop the design, coordinate technical requirements, refine materials and prepare the detailed information & BoQ needed for implementation.
+                        </p>
+                    </div>
+                    <div class="border-t border-slate-100 pt-4 flex justify-between items-center text-[10px] font-bold uppercase tracking-widest text-slate-600 mt-auto">
+                        <span>Technical Drawings & BoQ</span>
+                        <span class="material-symbols-outlined text-gold" style="font-size: 16px;">description</span>
+                    </div>
+                </div>
+
+                <!-- STAGE 4 -->
+                <div class="p-8 flex flex-col h-full hover:bg-slate-50 transition-colors">
+                    <div class="flex justify-between items-start mb-6">
+                        <span class="text-gold font-bold text-sm">04</span>
+                        <div class="w-2.5 h-2.5 border-2 border-navy-900"></div>
+                    </div>
+                    <div class="flex-grow">
+                        <span class="text-[9px] font-bold text-slate-400 uppercase tracking-widest block mb-2">STAGE 04</span>
+                        <h3 class="text-2xl font-serif text-navy-900 uppercase tracking-widest mb-4">Build</h3>
+                        <p class="text-sm font-bold text-navy-900 leading-snug mb-4">We bring the design to life.</p>
+                        <p class="text-[13px] text-slate-500 font-light leading-relaxed mb-12">
+                            Coordinate construction, workmanship, structural materials, quality supervision and daily activities while keeping aligned with agreed standards.
+                        </p>
+                    </div>
+                    <div class="border-t border-slate-100 pt-4 flex justify-between items-center text-[10px] font-bold uppercase tracking-widest text-slate-600 mt-auto">
+                        <span>Turnkey Construction</span>
+                        <span class="material-symbols-outlined text-gold" style="font-size: 16px;">construction</span>
+                    </div>
+                </div>
+
+                <!-- STAGE 5 -->
+                <div class="p-8 flex flex-col h-full hover:bg-slate-50 transition-colors">
+                    <div class="flex justify-between items-start mb-6">
+                        <span class="text-gold font-bold text-sm">05</span>
+                        <div class="w-2.5 h-2.5 bg-gold"></div>
+                    </div>
+                    <div class="flex-grow">
+                        <span class="text-[9px] font-bold text-slate-400 uppercase tracking-widest block mb-2">STAGE 05</span>
+                        <h3 class="text-2xl font-serif text-navy-900 uppercase tracking-widest mb-4">Deliver</h3>
+                        <p class="text-sm font-bold text-navy-900 leading-snug mb-4">We complete the space with attention to detail.</p>
+                        <p class="text-[13px] text-slate-500 font-light leading-relaxed mb-12">
+                            Move toward final commissioning, resolve punch list items, obtain statutory occupancy compliance and hand over the completed architectural project.
+                        </p>
+                    </div>
+                    <div class="border-t border-slate-100 pt-4 flex justify-between items-center text-[10px] font-bold uppercase tracking-widest text-slate-600 mt-auto">
+                        <span>Handover & Commissioning</span>
+                        <span class="material-symbols-outlined text-gold" style="font-size: 16px;">key</span>
+                    </div>
+                </div>
+                
+            </div>
+
+            <!-- Footer of Sequence -->
+            <div class="flex flex-col md:flex-row justify-between items-center bg-slate-100/50 border border-slate-200 mt-6 px-6 py-4 text-[10px] font-bold uppercase tracking-widest text-slate-700">
+                <div class="flex items-center gap-2">
+                    <span class="w-1.5 h-1.5 bg-gold"></span>
+                    Single Point of Responsibility Across All 5 Iterations
+                </div>
+                <div class="mt-2 md:mt-0">
+                    Average Project Cycle: On-Budget, On-Schedule Execution
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ========================================== -->
+    <!-- OUR PRINCIPLES                             -->
+    <!-- ========================================== -->
+    <section class="py-20 bg-[#fafafa]">
+        <div class="max-w-[1400px] mx-auto px-6 lg:px-12">
+            
+            <div class="flex flex-col md:flex-row justify-between items-end border-b border-slate-200 pb-4 mb-10">
+                <div>
+                    <h4 class="text-[10px] font-bold text-gold tracking-widest uppercase mb-2">OUR PRINCIPLES</h4>
+                    <h2 class="text-3xl font-serif font-bold text-navy-900">What Guides Our Work</h2>
+                </div>
+                <div class="text-[9px] font-bold uppercase tracking-widest text-slate-500 mt-4 md:mt-0">
+                    ARCHITECTURAL ETHOS & OPERATIONAL DISCIPLINE
+                </div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                
+                <!-- Principle 01 -->
+                <div class="bg-white p-8 border border-slate-200 shadow-[0_4px_20px_-10px_rgba(0,0,0,0.05)]">
+                    <div class="flex justify-between items-start mb-6">
+                        <span class="text-[10px] font-bold text-slate-400 uppercase tracking-widest flex items-center gap-2">
+                            <span class="text-gold">01 //</span> PRINCIPLE
+                        </span>
+                        <span class="material-symbols-outlined text-navy-900" style="font-size: 20px;">filter_center_focus</span>
+                    </div>
+                    <h3 class="text-xl font-serif font-bold text-navy-900 tracking-wider uppercase mb-4">Clarity</h3>
+                    <p class="text-[13px] text-slate-600 font-light leading-relaxed">
+                        Clear thinking, clear transparent communication, transparent pricing, and unequivocal project direction at every milestone.
+                    </p>
+                </div>
+
+                <!-- Principle 02 -->
+                <div class="bg-white p-8 border border-slate-200 shadow-[0_4px_20px_-10px_rgba(0,0,0,0.05)]">
+                    <div class="flex justify-between items-start mb-6">
+                        <span class="text-[10px] font-bold text-slate-400 uppercase tracking-widest flex items-center gap-2">
+                            <span class="text-gold">02 //</span> PRINCIPLE
+                        </span>
+                        <span class="material-symbols-outlined text-navy-900" style="font-size: 20px;">groups</span>
+                    </div>
+                    <h3 class="text-xl font-serif font-bold text-navy-900 tracking-wider uppercase mb-4">Collaboration</h3>
+                    <p class="text-[13px] text-slate-600 font-light leading-relaxed">
+                        Working closely with clients, engineers, quantity surveyors, sub-contractors, and regulatory authorities as one aligned team.
+                    </p>
+                </div>
+
+                <!-- Principle 03 -->
+                <div class="bg-white p-8 border border-slate-200 shadow-[0_4px_20px_-10px_rgba(0,0,0,0.05)]">
+                    <div class="flex justify-between items-start mb-6">
+                        <span class="text-[10px] font-bold text-slate-400 uppercase tracking-widest flex items-center gap-2">
+                            <span class="text-gold">03 //</span> PRINCIPLE
+                        </span>
+                        <span class="material-symbols-outlined text-navy-900" style="font-size: 20px;">square_foot</span>
+                    </div>
+                    <h3 class="text-xl font-serif font-bold text-navy-900 tracking-wider uppercase mb-4">Precision</h3>
+                    <p class="text-[13px] text-slate-600 font-light leading-relaxed">
+                        Meticulous attention to spatial design, structural technical detail, quality material specifications, and exacting onsite joinery execution.
+                    </p>
+                </div>
+
+                <!-- Principle 04 -->
+                <div class="bg-white p-8 border border-slate-200 shadow-[0_4px_20px_-10px_rgba(0,0,0,0.05)]">
+                    <div class="flex justify-between items-start mb-6">
+                        <span class="text-[10px] font-bold text-slate-400 uppercase tracking-widest flex items-center gap-2">
+                            <span class="text-gold">04 //</span> PRINCIPLE
+                        </span>
+                        <span class="material-symbols-outlined text-navy-900" style="font-size: 20px;">verified_user</span>
+                    </div>
+                    <h3 class="text-xl font-serif font-bold text-navy-900 tracking-wider uppercase mb-4">Accountability</h3>
+                    <p class="text-[13px] text-slate-600 font-light leading-relaxed">
+                        Taking wholehearted responsibility for the physical process, project deadlines, and maintaining strict fidelity to the intended architectural outcome.
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================================== -->
+    <!-- TRANSPARENT COLLABORATION BANNER           -->
+    <!-- ========================================== -->
+    <section class="bg-[#0b1527] py-16">
+        <div class="max-w-[1400px] mx-auto px-6 lg:px-12">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
+                
+                <!-- Left Title -->
+                <div class="lg:col-span-5 border-l-2 border-gold pl-6">
+                    <h4 class="text-[10px] font-bold text-gold tracking-widest uppercase mb-3">TRANSPARENT COLLABORATION</h4>
+                    <h2 class="text-4xl lg:text-5xl font-serif text-white tracking-wide leading-tight">
+                        You Stay Involved.<br>
+                        We Keep It Moving.
+                    </h2>
+                </div>
+
+                <!-- Right Content -->
+                <div class="lg:col-span-7 lg:pl-10">
+                    <p class="text-slate-300 text-[15px] font-light leading-relaxed mb-8 max-w-3xl">
+                        We keep clients actively informed at key decision gates, demystify engineering and construction choices, and maintain an unbreakable connection between the original brief, the architectural design, and the final physical structure.
+                    </p>
+                    
+                    <div class="flex flex-col sm:flex-row gap-6 text-[10px] font-bold uppercase tracking-widest text-white">
+                        <div class="flex items-center gap-2">
+                            <span class="material-symbols-outlined text-gold" style="font-size: 16px;">task_alt</span>
+                            Bi-Weekly Milestone Reports
+                        </div>
+                        <div class="flex items-center gap-2">
+                            <span class="material-symbols-outlined text-gold" style="font-size: 16px;">task_alt</span>
+                            Direct Site Consultations
+                        </div>
+                        <div class="flex items-center gap-2">
+                            <span class="material-symbols-outlined text-gold" style="font-size: 16px;">task_alt</span>
+                            Open Book BoQ Auditing
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================================== -->
+    <!-- FLEXIBLE ENGAGEMENT MODELS                 -->
+    <!-- ========================================== -->
+    <section class="py-24 bg-[#fafafa]">
+        <div class="max-w-[1400px] mx-auto px-6 lg:px-12">
+            
+            <div class="flex flex-col lg:flex-row justify-between items-end border-b border-slate-200 pb-4 mb-10">
+                <div class="mb-4 lg:mb-0">
+                    <h4 class="text-[10px] font-bold text-gold tracking-widest uppercase mb-2">FLEXIBLE ENGAGEMENT MODELS</h4>
+                    <h2 class="text-3xl font-serif font-bold text-navy-900">Wherever You Are, We Can Start There.</h2>
+                </div>
+                <div class="text-[13px] font-light text-slate-500 max-w-sm text-left lg:text-right">
+                    Our framework accommodates projects entering at distinct phases of maturity.
+                </div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-20">
+                
+                <!-- Concept Phase -->
+                <div class="bg-white p-8 border border-slate-200 shadow-sm flex flex-col h-full">
+                    <div class="flex justify-between items-start mb-6">
+                        <span class="text-[10px] font-bold text-slate-400 uppercase tracking-widest flex items-center gap-2">
+                            <span class="text-slate-300">01 //</span> CONCEPT PHASE
+                        </span>
+                        <span class="material-symbols-outlined text-slate-400" style="font-size: 18px;">lightbulb</span>
+                    </div>
+                    <h3 class="text-lg font-serif font-bold text-navy-900 uppercase tracking-wider mb-3">I HAVE AN IDEA</h3>
+                    <p class="text-[13px] text-slate-500 font-light leading-relaxed mb-8 flex-grow">
+                        Start with the brief & initial site feasibility.
+                    </p>
+                    <a href="contact.html" class="flex justify-between items-center text-[10px] font-bold uppercase tracking-widest text-navy-900 border-t border-slate-100 pt-4 hover:text-gold transition-colors">
+                        ARCHITECTURAL DESIGN
+                        <span class="material-symbols-outlined" style="font-size: 14px;">arrow_forward</span>
+                    </a>
+                </div>
+
+                <!-- Technical Phase -->
+                <div class="bg-white p-8 border border-slate-200 shadow-sm flex flex-col h-full">
+                    <div class="flex justify-between items-start mb-6">
+                        <span class="text-[10px] font-bold text-slate-400 uppercase tracking-widest flex items-center gap-2">
+                            <span class="text-slate-300">02 //</span> TECHNICAL PHASE
+                        </span>
+                        <span class="material-symbols-outlined text-slate-400" style="font-size: 18px;">draft</span>
+                    </div>
+                    <h3 class="text-lg font-serif font-bold text-navy-900 uppercase tracking-wider mb-3">I HAVE A DESIGN</h3>
+                    <p class="text-[13px] text-slate-500 font-light leading-relaxed mb-8 flex-grow">
+                        Let's develop engineering specs & rigorous BoQ.
+                    </p>
+                    <a href="contact.html" class="flex justify-between items-center text-[10px] font-bold uppercase tracking-widest text-navy-900 border-t border-slate-100 pt-4 hover:text-gold transition-colors">
+                        DEVELOPMENT & BOQ
+                        <span class="material-symbols-outlined" style="font-size: 14px;">arrow_forward</span>
+                    </a>
+                </div>
+
+                <!-- Execution Phase -->
+                <div class="bg-white p-8 border border-slate-200 shadow-sm flex flex-col h-full">
+                    <div class="flex justify-between items-start mb-6">
+                        <span class="text-[10px] font-bold text-slate-400 uppercase tracking-widest flex items-center gap-2">
+                            <span class="text-slate-300">03 //</span> EXECUTION PHASE
+                        </span>
+                        <span class="material-symbols-outlined text-slate-400" style="font-size: 18px;">foundation</span>
+                    </div>
+                    <h3 class="text-lg font-serif font-bold text-navy-900 uppercase tracking-wider mb-3">I'M READY TO BUILD</h3>
+                    <p class="text-[13px] text-slate-500 font-light leading-relaxed mb-8 flex-grow">
+                        Move directly into turnkey construction & site management.
+                    </p>
+                    <a href="contact.html" class="flex justify-between items-center text-[10px] font-bold uppercase tracking-widest text-navy-900 border-t border-slate-100 pt-4 hover:text-gold transition-colors">
+                        TURNKEY CONSTRUCTION
+                        <span class="material-symbols-outlined" style="font-size: 14px;">arrow_forward</span>
+                    </a>
+                </div>
+
+                <!-- Adaptation Phase -->
+                <div class="bg-white p-8 border border-slate-200 shadow-sm flex flex-col h-full">
+                    <div class="flex justify-between items-start mb-6">
+                        <span class="text-[10px] font-bold text-slate-400 uppercase tracking-widest flex items-center gap-2">
+                            <span class="text-slate-300">04 //</span> ADAPTATION PHASE
+                        </span>
+                        <span class="material-symbols-outlined text-slate-400" style="font-size: 18px;">auto_fix_high</span>
+                    </div>
+                    <h3 class="text-lg font-serif font-bold text-navy-900 uppercase tracking-wider mb-3">I HAVE AN EXISTING SPACE</h3>
+                    <p class="text-[13px] text-slate-500 font-light leading-relaxed mb-8 flex-grow">
+                        Transform, reconfigure, expand, or remodel.
+                    </p>
+                    <a href="contact.html" class="flex justify-between items-center text-[10px] font-bold uppercase tracking-widest text-navy-900 border-t border-slate-100 pt-4 hover:text-gold transition-colors">
+                        RENOVATION & REMODEL
+                        <span class="material-symbols-outlined" style="font-size: 14px;">arrow_forward</span>
+                    </a>
+                </div>
+
+            </div>
+
+            <!-- TAKE THE FIRST STEP CTA -->
+            <div class="bg-white border border-slate-200 shadow-sm p-10 lg:p-16 text-center max-w-5xl mx-auto flex flex-col lg:flex-row items-center justify-between gap-10">
+                <div class="text-left max-w-xl">
+                    <h4 class="text-[10px] font-bold text-gold tracking-widest uppercase mb-2">TAKE THE FIRST STEP</h4>
+                    <h2 class="text-3xl font-serif text-navy-900 mb-4">Ready to Start?</h2>
+                    <p class="text-slate-600 text-[14px] font-light leading-relaxed">
+                        Tell us what you are planning. We'll help you determine the exact next step, organize a site evaluation, and prepare initial technical feasibility.
+                    </p>
+                </div>
+                <div class="flex flex-col sm:flex-row gap-4 shrink-0 w-full lg:w-auto">
+                    <a href="contact.html" class="bg-[#c19b36] hover:bg-[#a8852d] text-white font-bold text-[11px] uppercase tracking-wider px-8 py-4 transition-colors flex items-center justify-center gap-2 shadow-sm text-center">
+                        START A PROJECT <span class="material-symbols-outlined" style="font-size: 16px;">east</span>
+                    </a>
+                    <a href="services.html" class="border border-navy-900 text-navy-900 hover:bg-navy-900 hover:text-white font-bold text-[11px] uppercase tracking-wider px-8 py-4 transition-colors flex items-center justify-center gap-2 text-center">
+                        VIEW OUR SERVICES <span class="material-symbols-outlined" style="font-size: 16px;">arrow_forward</span>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ========================================== -->
+    <!-- FOOTER                                     -->
+    <!-- ========================================== -->
+    <footer class="bg-[#0b1527] text-slate-300 pt-20 pb-12">
+        <div class="max-w-[1400px] mx-auto px-6 lg:px-12">
+            
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 mb-16 border-b border-slate-800 pb-16">
+                
+                <!-- Brand Info (Col 1-5) -->
+                <div class="lg:col-span-5 pr-0 lg:pr-12">
+                    <div class="flex items-start gap-4 mb-6">
+                        <div class="w-10 h-10 border border-slate-600 flex items-center justify-center p-1 shrink-0 mt-1">
+                            <span class="text-white font-bold text-xl font-serif">R</span>
+                        </div>
+                        <h2 class="text-white font-serif font-bold tracking-wide text-3xl leading-tight">RAKAAJ DESIGNERS &<br>BUILDERS</h2>
+                    </div>
+                    <p class="text-slate-400 text-[13px] font-light leading-relaxed mb-6 max-w-md">
+                        Bespoke architecture, structural engineering, interior architecture, and turnkey building execution across Nairobi and East Africa. Registered practice dedicated to structural permanence and contemporary aesthetic precision.
+                    </p>
+                    <div class="flex items-center gap-3 text-[9px] font-bold tracking-widest uppercase text-gold">
+                        <span class="w-1.5 h-1.5 bg-gold"></span>
+                        REGISTERED ARCHITECTURAL PRACTICE • KENYA
+                    </div>
+                </div>
+
+                <!-- Practice Disciplines (Col 6-9) -->
+                <div class="lg:col-span-4">
+                    <h3 class="text-gold text-[10px] font-bold tracking-widest uppercase mb-6">PRACTICE DISCIPLINES</h3>
+                    <div class="grid grid-cols-2 gap-x-4 gap-y-4 text-[13px] text-slate-400 font-light">
+                        <ul class="space-y-4">
+                            <li><a href="#" class="hover:text-white transition-colors">Architecture & Planning</a></li>
+                            <li><a href="#" class="hover:text-white transition-colors">General Construction</a></li>
+                            <li><a href="#" class="hover:text-white transition-colors">Bill of Quantities (BoQ)</a></li>
+                        </ul>
+                        <ul class="space-y-4">
+                            <li><a href="#" class="hover:text-white transition-colors">Interior Architecture</a></li>
+                            <li><a href="#" class="hover:text-white transition-colors">Project Management</a></li>
+                            <li><a href="#" class="hover:text-white transition-colors">Client Portal</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Studio Inquiries (Col 10-12) -->
+                <div class="lg:col-span-3">
+                    <h3 class="text-gold text-[10px] font-bold tracking-widest uppercase mb-6">STUDIO INQUIRIES</h3>
+                    <ul class="space-y-4 text-[13px] text-slate-300 font-light">
+                        <li>
+                            <a href="tel:+254718178773" class="flex items-center gap-3 hover:text-white transition-colors">
+                                <span class="material-symbols-outlined text-gold" style="font-size: 16px;">call</span>
+                                +254 718 178773
+                            </a>
+                        </li>
+                        <li>
+                            <a href="mailto:raphamasila@gmail.com" class="flex items-center gap-3 hover:text-white transition-colors">
+                                <span class="material-symbols-outlined text-gold" style="font-size: 16px;">mail</span>
+                                raphamasila@gmail.com
+                            </a>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <span class="material-symbols-outlined text-gold mt-1" style="font-size: 16px;">location_on</span>
+                            <span class="leading-relaxed">Nairobi Studio & Construction<br>Operations, Kenya</span>
+                        </li>
+                    </ul>
+                </div>
+                
+            </div>
+
+            <!-- Bottom Legal Bar -->
+            <div class="flex flex-col md:flex-row justify-between items-center text-[9px] font-bold text-slate-500 uppercase tracking-widest gap-4">
+                <p>&copy; 2025 RAKAAJ DESIGNERS & BUILDERS LTD. ALL RIGHTS RESERVED. REGISTERED ARCHITECTURAL PRACTICE, KENYA.</p>
+                <div class="flex items-center space-x-6">
+                    <a href="#" class="hover:text-white transition-colors">PRIVACY & COMPLIANCE</a>
+                    <span class="text-slate-700">•</span>
+                    <a href="#" class="hover:text-white transition-colors">TERMS OF PRACTICE</a>
+                    <span class="text-slate-700">•</span>
+                    <a href="#" class="hover:text-white transition-colors">BORAQS REGULATED</a>
+                </div>
+            </div>
+
+        </div>
+    </footer>
+
+</body>
+</html>
