@@ -87,17 +87,46 @@
         </div>
 
         <!-- MAIN NAVBAR -->
-        <nav class="px-6 lg:px-12 py-3 lg:py-0 flex justify-between items-center bg-white shadow-sm">
-            <a href="index.html" class="flex items-center gap-3 py-3">
-                <div class="w-10 h-10 border border-slate-800 flex items-center justify-center p-1">
-                    <span class="text-slate-900 font-bold text-xl font-serif">R</span>
-                </div>
-                <div class="flex flex-col">
-                    <span class="text-[22px] font-serif font-semibold tracking-wider text-slate-900 leading-none">RAKAAJ</span>
-                    <span class="text-[8px] text-slate-500 font-bold tracking-widest uppercase mt-1">DESIGNERS & BUILDERS <span class="text-gold">•</span> KENYA</span>
-                </div>
-            </a>
+        <!-- MAIN NAVIGATION BAR -->
+<nav class="px-6 lg:px-12 py-3.5 flex justify-between items-center sticky top-0 z-50 bg-[#121c2d]">
+    
+    <!-- Logo Section -->
+    <a href="index.html" class="flex items-center gap-3.5 group">
+        
+        <!-- Integrated SVG Logo Badge -->
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 130" class="w-14 h-11 shrink-0 rounded-sm shadow-inner">
+            <!-- Muted Slate-Blue Card Background -->
+            <rect width="160" height="130" fill="#2d3d57" rx="3"/>
             
+            <!-- Top White Chevron Line -->
+            <path d="M 25 35 L 80 18 L 135 35" fill="none" stroke="#ffffff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+            
+            <!-- Bottom White Chevron Line -->
+            <path d="M 25 105 L 80 120 L 135 105" fill="none" stroke="#ffffff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+            
+            <!-- Gold House Icon -->
+            <g fill="#c89e2b">
+                <!-- Chimney -->
+                <rect x="92" y="36" width="10" height="16"/>
+                <!-- Roof & Base Slopes -->
+                <polygon points="40,70 78,40 84,40 48,70"/>
+                <polygon points="78,40 122,70 110,70 74,45"/>
+                <polygon points="50,69 108,69 100,62 58,62"/>
+                <!-- Center Window -->
+                <rect x="74" y="54" width="10" height="10" fill="#2d3d57"/>
+            </g>
+            
+            <!-- Inner Badge Text -->
+            <text x="80" y="86" font-family="'Playfair Display', Georgia, serif" font-weight="700" font-size="11" fill="#ffffff" text-anchor="middle" letter-spacing="1.5">RAKAJ</text>
+            <text x="80" y="96" font-family="'Montserrat', sans-serif" font-weight="600" font-size="4.5" fill="#d1d8e0" text-anchor="middle" letter-spacing="0.5">DESIGNERS &amp; BUILDERS</text>
+        </svg>
+
+        <!-- Brand Name Beside Logo -->
+        <div class="flex flex-col">
+            <span class="text-xl font-serif font-bold tracking-wider text-white leading-none">RAKAJ</span>
+            <span class="text-[9px] text-[#c89e2b] font-bold tracking-widest uppercase mt-1">DESIGNERS &amp; BUILDERS LTD</span>
+        </div>
+    </a>
             <ul class="hidden lg:flex items-center space-x-8 text-[11px] font-bold uppercase tracking-widest h-full">
                 <li class="h-full flex items-center py-7"><a href="index.html" class="text-slate-600 hover:text-navy-900 transition-colors">HOME</a></li>
                 <li class="h-full flex items-center py-7"><a href="about.html" class="text-slate-600 hover:text-navy-900 transition-colors">ABOUT US</a></li>

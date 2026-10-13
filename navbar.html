@@ -51,24 +51,46 @@
             </div>
         </div>
 
-        <!-- MAIN NAVIGATION BAR -->
-        <nav class="px-6 lg:px-12 py-3.5 flex justify-between items-center sticky top-0 z-50 bg-[#121c2d]">
+<!-- MAIN NAVIGATION BAR -->
+<nav class="px-6 lg:px-12 py-3.5 flex justify-between items-center sticky top-0 z-50 bg-[#121c2d]">
+    
+    <!-- Logo Section -->
+    <a href="index.html" class="flex items-center gap-3.5 group">
+        
+        <!-- Integrated SVG Logo Badge -->
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 130" class="w-14 h-11 shrink-0 rounded-sm shadow-inner">
+            <!-- Muted Slate-Blue Card Background -->
+            <rect width="160" height="130" fill="#2d3d57" rx="3"/>
             
-            <!-- Logo Section -->
-            <a href="index.html" class="flex items-center gap-3.5 group">
-                <!-- Logo Graphic Box -->
-                <div class="w-12 h-11 bg-[#233554] border border-slate-600/50 flex flex-col items-center justify-center p-1 rounded-sm shadow-inner">
-                    <svg class="w-6 h-6 text-[#c89e2b]" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 12l8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25"/>
-                    </svg>
-                </div>
-                <!-- Brand Name -->
-                <div class="flex flex-col">
-                    <span class="text-xl font-serif font-bold tracking-wider text-white leading-none">RAKAJ</span>
-                    <span class="text-[9px] text-[#c89e2b] font-bold tracking-widest uppercase mt-1">DESIGNERS & BUILDERS LTD</span>
-                </div>
-            </a>
+            <!-- Top White Chevron Line -->
+            <path d="M 25 35 L 80 18 L 135 35" fill="none" stroke="#ffffff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+            
+            <!-- Bottom White Chevron Line -->
+            <path d="M 25 105 L 80 120 L 135 105" fill="none" stroke="#ffffff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+            
+            <!-- Gold House Icon -->
+            <g fill="#c89e2b">
+                <!-- Chimney -->
+                <rect x="92" y="36" width="10" height="16"/>
+                <!-- Roof & Base Slopes -->
+                <polygon points="40,70 78,40 84,40 48,70"/>
+                <polygon points="78,40 122,70 110,70 74,45"/>
+                <polygon points="50,69 108,69 100,62 58,62"/>
+                <!-- Center Window -->
+                <rect x="74" y="54" width="10" height="10" fill="#2d3d57"/>
+            </g>
+            
+            <!-- Inner Badge Text -->
+            <text x="80" y="86" font-family="'Playfair Display', Georgia, serif" font-weight="700" font-size="11" fill="#ffffff" text-anchor="middle" letter-spacing="1.5">RAKAJ</text>
+            <text x="80" y="96" font-family="'Montserrat', sans-serif" font-weight="600" font-size="4.5" fill="#d1d8e0" text-anchor="middle" letter-spacing="0.5">DESIGNERS &amp; BUILDERS</text>
+        </svg>
 
+        <!-- Brand Name Beside Logo -->
+        <div class="flex flex-col">
+            <span class="text-xl font-serif font-bold tracking-wider text-white leading-none">RAKAJ</span>
+            <span class="text-[9px] text-[#c89e2b] font-bold tracking-widest uppercase mt-1">DESIGNERS &amp; BUILDERS LTD</span>
+        </div>
+    </a>
             <!-- Nav Links -->
             <ul class="hidden lg:flex items-center space-x-7 text-[12px] font-bold uppercase tracking-wider">
                 <li>
