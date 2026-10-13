@@ -220,30 +220,32 @@
                         Complete the project parameters below and our practice directorship will review and respond within 24 hours.
                     </p>
 
-                    <form action="#" method="POST" class="space-y-6">
+                    
+                    <form action="process_form.php" method="POST" class="space-y-6">
                         <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
                             <!-- Full Name -->
                             <div>
                                 <label class="block text-[10px] font-bold text-navy-900 uppercase tracking-widest mb-2">Full Name <span class="text-gold">*</span></label>
-                                <input type="text" placeholder="e.g. David Mutiso" required
-                                    class="w-full border border-slate-200 px-4 py-3 text-[14px] text-slate-700 bg-white placeholder-slate-300">
+                                <
+                                <input type="text" name="full_name" placeholder="e.g. David Mutiso" required
+    class="w-full border border-slate-200 px-4 py-3 text-[14px] text-slate-700 bg-white placeholder-slate-300">
                             </div>
                             <!-- Company -->
                             <div>
                                 <label class="block text-[10px] font-bold text-navy-900 uppercase tracking-widest mb-2">Company / Organisation</label>
-                                <input type="text" placeholder="e.g. Private Estate / Commercial Dev" 
+                                <input type="text" name="company" placeholder="e.g. Private Estate / Commercial Dev" 
                                     class="w-full border border-slate-200 px-4 py-3 text-[14px] text-slate-700 bg-white placeholder-slate-300">
                             </div>
                             <!-- Email -->
                             <div>
                                 <label class="block text-[10px] font-bold text-navy-900 uppercase tracking-widest mb-2">Email Address <span class="text-gold">*</span></label>
-                                <input type="email" placeholder="name@domain.com" required
+                                <input type="email" name="email" placeholder="name@domain.com" required
                                     class="w-full border border-slate-200 px-4 py-3 text-[14px] text-slate-700 bg-white placeholder-slate-300">
                             </div>
                             <!-- Phone -->
                             <div>
                                 <label class="block text-[10px] font-bold text-navy-900 uppercase tracking-widest mb-2">Phone Number <span class="text-gold">*</span></label>
-                                <input type="tel" placeholder="+254 700 000 000" required
+                                <input type="tel" name="phone" placeholder="+254 700 000 000" required
                                     class="w-full border border-slate-200 px-4 py-3 text-[14px] text-slate-700 bg-white placeholder-slate-300">
                             </div>
                         </div>
@@ -252,7 +254,7 @@
                         <div>
                             <label class="block text-[10px] font-bold text-navy-900 uppercase tracking-widest mb-2">Service / Area of Interest <span class="text-gold">*</span></label>
                             <div class="relative">
-                                <select required class="w-full border border-slate-200 px-4 py-3 text-[14px] text-slate-700 bg-white appearance-none cursor-pointer">
+                                <select name="service_interest" required class="w-full border border-slate-200 px-4 py-3 text-[14px] text-slate-700 bg-white appearance-none cursor-pointer">
                                     <option value="" disabled selected>Select primary project discipline...</option>
                                     <option value="Turnkey Construction">Turnkey Construction</option>
                                     <option value="Architectural Design">Architectural & Spatial Design</option>
