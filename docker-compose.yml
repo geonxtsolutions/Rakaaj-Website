@@ -5,4 +5,5 @@ services:
     ports:
       - "8081:80"
     volumes:
-      - .:/usr/share/nginx/html # This syncs your local files so you don't have to rebuild Docker every time you change HTML/JS
+      - .:/usr/share/nginx/html
+      - ./default.conf:/etc/nginx/conf.d/default.conf:ro
