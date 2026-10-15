@@ -42,11 +42,13 @@ document.addEventListener('DOMContentLoaded', () => {
 
                 // Initialize sticky nav AFTER navbar is injected into DOM
                 initStickyNav();
+                initMobileMenu();
             })
             .catch(error => console.error("Error loading navbar:", error));
     } else {
         // If placeholder DOES NOT exist (e.g., on index.html), just init the sticky nav immediately
         initStickyNav();
+        initMobileMenu();
     }
 
     // 4. Handle Footer Logic
@@ -58,4 +60,61 @@ document.addEventListener('DOMContentLoaded', () => {
             })
             .catch(error => console.error("Error loading footer:", error));
     }
+
+
+    // 5. Project Filtering Logic
+    const filterBtns = document.querySelectorAll('.filter-btn');
+    const projectCards = document.querySelectorAll('.project-card');
+
+    if (filterBtns.length > 0 && projectCards.length > 0) {
+        filterBtns.forEach(btn => {
+            btn.addEventListener('click', function() {
+                // Remove active state from all buttons
+                filterBtns.forEach(b => {
+                    b.classList.remove('bg-navy', 'text-white');
+                    b.classList.add('hover:bg-gray-50');
+                });
+
+                // Add active state to clicked button
+                this.classList.remove('hover:bg-gray-50');
+                this.classList.add('bg-navy', 'text-white');
+
+                // Get the filter value
+                const filterValue = this.getAttribute('data-filter');
+
+                // Show/Hide projects based on the filter
+                projectCards.forEach(card => {
+                    if (filterValue === 'all' || card.classList.contains(filterValue)) {
+                        card.style.display = 'block'; 
+                    } else {
+                        card.style.display = 'none'; 
+                    }
+                });
+            });
+        });
+    }
 });
+
+
+// 6. Mobile Menu Toggle Logic
+    // Using a function so it can be called after the navbar is dynamically loaded
+    function initMobileMenu() {
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        if (mobileMenuBtn && mobileMenu) {
+            mobileMenuBtn.addEventListener('click', () => {
+                mobileMenu.classList.toggle('hidden');
+                
+                // Toggle the icon between bars and close (X)
+                const icon = mobileMenuBtn.querySelector('i');
+                if (icon.classList.contains('fa-bars')) {
+                    icon.classList.remove('fa-bars');
+                    icon.classList.add('fa-xmark');
+                } else {
+                    icon.classList.remove('fa-xmark');
+                    icon.classList.add('fa-bars');
+                }
+            });
+        }
+    }

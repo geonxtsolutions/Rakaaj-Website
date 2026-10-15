@@ -122,18 +122,35 @@
 
             <!-- CTA Button & Mobile Toggle -->
             <div class="flex items-center gap-4">
-                <a href="contact.html" class="bg-[#c89e2b] hover:bg-[#b58c23] text-[#0f1726] font-extrabold text-[12px] uppercase tracking-wider px-6 py-3 transition-colors shadow-md">
+                <a href="contact.html" class="hidden sm:block bg-[#c89e2b] hover:bg-[#b58c23] text-[#0f1726] font-extrabold text-[12px] uppercase tracking-wider px-6 py-3 transition-colors shadow-md">
                     START A PROJECT
                 </a>
                 
                 <!-- Mobile Menu Icon (Hidden on Desktop) -->
-                <button class="lg:hidden text-slate-300 hover:text-white focus:outline-none">
+                <button id="mobile-menu-btn" class="lg:hidden text-slate-300 hover:text-white focus:outline-none">
                     <i class="fa-solid fa-bars text-xl"></i>
                 </button>
             </div>
             
         </nav>
+
+        <!-- Mobile Menu Container (Hidden by default) -->
+        <div id="mobile-menu" class="hidden lg:hidden bg-[#0f1726] border-t border-slate-800 absolute w-full z-40">
+            <ul class="flex flex-col text-[12px] font-bold uppercase tracking-wider divide-y divide-slate-800">
+                <li><a href="index.html" class="block px-6 py-4 text-slate-200 hover:text-[#c89e2b] hover:bg-slate-800/50 transition-colors">Home</a></li>
+                <li><a href="about.html" class="block px-6 py-4 text-slate-200 hover:text-[#c89e2b] hover:bg-slate-800/50 transition-colors">About Us</a></li>
+                <li><a href="services.html" class="block px-6 py-4 text-slate-200 hover:text-[#c89e2b] hover:bg-slate-800/50 transition-colors">Services</a></li>
+                <li><a href="projects.html" class="block px-6 py-4 text-slate-200 hover:text-[#c89e2b] hover:bg-slate-800/50 transition-colors">Projects</a></li>
+                <li><a href="approach.html" class="block px-6 py-4 text-slate-200 hover:text-[#c89e2b] hover:bg-slate-800/50 transition-colors">Our Approach</a></li>
+                <li><a href="leadership.html" class="block px-6 py-4 text-slate-200 hover:text-[#c89e2b] hover:bg-slate-800/50 transition-colors">Leadership</a></li>
+                <li><a href="contact.html" class="block px-6 py-4 text-slate-200 hover:text-[#c89e2b] hover:bg-slate-800/50 transition-colors">Contact</a></li>
+                <li class="px-6 py-6">
+                    <a href="contact.html" class="block text-center bg-[#c89e2b] text-[#0f1726] font-extrabold py-3">START A PROJECT</a>
+                </li>
+            </ul>
+        </div>
     </header>
+
 
     <!-- ========================================== -->
     <!-- NAVBAR COMPONENT END                       -->

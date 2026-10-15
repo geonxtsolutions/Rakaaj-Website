@@ -67,18 +67,101 @@
 
         <!-- Philosophy & Filters -->
         <section class="py-16 px-6 md:px-12 lg:px-24 border-t border-gray-100">
-            <div class="max-w-7xl mx-auto">
-                <!-- Tabs -->
-                <div class="flex flex-wrap gap-2 md:gap-0 border border-gray-200 w-fit text-sm font-medium text-gray-500">
-                    <button class="px-6 py-3 bg-navy text-white flex items-center space-x-2"><span>All</span> <span class="text-gold text-xs">(06)</span></button>
-                    <button class="px-6 py-3 border-l border-gray-200 hover:bg-gray-50">Residential <span class="text-gray-400 text-xs ml-1">(03)</span></button>
-                    <button class="px-6 py-3 border-l border-gray-200 hover:bg-gray-50">Interiors <span class="text-gray-400 text-xs ml-1">(02)</span></button>
-                    <button class="px-6 py-3 border-l border-gray-200 hover:bg-gray-50">Turnkey Build <span class="text-gray-400 text-xs ml-1">(04)</span></button>
-                    <button class="px-6 py-3 border-l border-gray-200 hover:bg-gray-50">Renovation & Remodeling <span class="text-gray-400 text-xs ml-1">(01)</span></button>
-                    <button class="px-6 py-3 border-l border-gray-200 text-gray-300 cursor-not-allowed">Commercial (In Planning)</button>
+    <div class="max-w-7xl mx-auto">
+        <!-- Tabs -->
+        <div class="flex flex-wrap gap-2 md:gap-0 border border-gray-200 w-fit text-sm font-medium text-gray-500 mb-12">
+            <button data-filter="all" class="filter-btn px-6 py-3 bg-navy text-white flex items-center space-x-2 transition-colors">
+                <span>All</span> <span class="text-gold text-xs">(06)</span>
+            </button>
+            <button data-filter="residential" class="filter-btn px-6 py-3 border-l border-gray-200 hover:bg-gray-50 transition-colors">
+                Residential <span class="text-gray-400 text-xs ml-1">(03)</span>
+            </button>
+            <button data-filter="interiors" class="filter-btn px-6 py-3 border-l border-gray-200 hover:bg-gray-50 transition-colors">
+                Interiors <span class="text-gray-400 text-xs ml-1">(02)</span>
+            </button>
+            <button data-filter="turnkey" class="filter-btn px-6 py-3 border-l border-gray-200 hover:bg-gray-50 transition-colors">
+                Turnkey Build <span class="text-gray-400 text-xs ml-1">(01)</span>
+            </button>
+            <button data-filter="renovation" class="filter-btn px-6 py-3 border-l border-gray-200 hover:bg-gray-50 transition-colors">
+                Renovation & Remodeling <span class="text-gray-400 text-xs ml-1">(00)</span>
+            </button>
+            <button class="px-6 py-3 border-l border-gray-200 text-gray-300 cursor-not-allowed">
+                Commercial (In Planning)
+            </button>
+        </div>
+
+        <!-- Projects Gallery Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8" id="projects-gallery">
+            
+            <!-- Project 1 (Residential) -->
+            <div class="project-card residential group cursor-pointer">
+                <div class="aspect-[4/3] bg-gray-200 overflow-hidden relative">
+                    <img src="assets/images/kiambuu1.jpeg" alt="Kiambu Mansion" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                </div>
+                <div class="mt-4">
+                    <h3 class="font-serif text-xl font-bold text-navy">Kiambu Mansion Concept</h3>
+                    <p class="text-xs text-gold font-bold uppercase tracking-widest mt-1">Residential</p>
                 </div>
             </div>
-        </section>
+
+            <!-- Project 2 (Interiors) -->
+            <div class="project-card interiors group cursor-pointer">
+                <div class="aspect-[4/3] bg-gray-200 overflow-hidden relative">
+                    <img src="assets/images/6.jpeg" alt="Modern Kitchen Interior" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                </div>
+                <div class="mt-4">
+                    <h3 class="font-serif text-xl font-bold text-navy">Modern Kitchen Fit-out</h3>
+                    <p class="text-xs text-gold font-bold uppercase tracking-widest mt-1">Interiors</p>
+                </div>
+            </div>
+
+            <!-- Project 3 (Residential) -->
+            <div class="project-card residential group cursor-pointer">
+                <div class="aspect-[4/3] bg-gray-200 overflow-hidden relative">
+                    <img src="assets/images/flatroof 2 b r1.jpeg" alt="Flat Roof Modern Home" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                </div>
+                <div class="mt-4">
+                    <h3 class="font-serif text-xl font-bold text-navy">Flat Roof Modern Home</h3>
+                    <p class="text-xs text-gold font-bold uppercase tracking-widest mt-1">Residential</p>
+                </div>
+            </div>
+
+            <!-- Project 4 (Turnkey) -->
+            <div class="project-card turnkey group cursor-pointer">
+                <div class="aspect-[4/3] bg-gray-200 overflow-hidden relative">
+                    <img src="assets\images\IMG20230921144045.jpg" alt="Site Construction" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                </div>
+                <div class="mt-4">
+                    <h3 class="font-serif text-xl font-bold text-navy">Ongoing Site Construction</h3>
+                    <p class="text-xs text-gold font-bold uppercase tracking-widest mt-1">Turnkey Build</p>
+                </div>
+            </div>
+
+            <!-- Project 5 (Interiors) -->
+            <div class="project-card interiors group cursor-pointer">
+                <div class="aspect-[4/3] bg-gray-200 overflow-hidden relative">
+                    <img src="assets\images\7.jpeg" alt="Dining Room Interior" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                </div>
+                <div class="mt-4">
+                    <h3 class="font-serif text-xl font-bold text-navy">Luxury Dining Fit-out</h3>
+                    <p class="text-xs text-gold font-bold uppercase tracking-widest mt-1">Interiors</p>
+                </div>
+            </div>
+
+            <!-- Project 6 (Residential) -->
+            <div class="project-card residential group cursor-pointer">
+                <div class="aspect-[4/3] bg-gray-200 overflow-hidden relative">
+                    <img src="assets\images\08.jpg.jpeg" alt="Residential Apartments" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                </div>
+                <div class="mt-4">
+                    <h3 class="font-serif text-xl font-bold text-navy">Residential Apartments</h3>
+                    <p class="text-xs text-gold font-bold uppercase tracking-widest mt-1">Residential</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
 
         <!-- Manifesto -->
         <section class="bg-navy py-24 px-6 text-center text-white relative">
